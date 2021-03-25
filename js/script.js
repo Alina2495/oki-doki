@@ -103,3 +103,12 @@ var swiper = new Swiper('.swiper-comments', {
             }, false)
         })
 })()
+
+
+
+
+
+
+$("#banner-carousel").carousel({
+    interval: false
+});
