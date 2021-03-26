@@ -527,7 +527,7 @@ progress {
     font-size: calc(1.525rem + 3.3vw);
     font-weight: 300;
     line-height: 1.2;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 @media (min-width: 1200px) {
@@ -540,6 +540,7 @@ progress {
     font-size: calc(1.475rem + 2.7vw);
     font-weight: 300;
     line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 1200px) {
@@ -7795,7 +7796,8 @@ fieldset:disabled .btn {
 }
 
 .text-muted {
-    color: #6c757d !important;
+    /* color: #6c757d !important; */
+    color: #606060 !important;
 }
 
 .text-black-50 {
