@@ -865,6 +865,10 @@ a {
     }
 }
 
+.desktop-scroll-header {
+    display: none;
+}
+
 .btn-1 {
     background-color: $orange;
     color: $white;
@@ -872,8 +876,19 @@ a {
     border: none;
 }
 
+.mobile-search {
+    input[type=search]:focus {
+        outline: none;
+    }
+    .bi-search::before {
+        color: #323232;
+    }
+}
+
 .mobile-menu,
-.mobile-menu-2 {
+.mobile-search,
+.mobile-menu-2,
+.desktop-scroll-header {
     z-index: 500;
 }
 
@@ -887,6 +902,23 @@ a {
         font-size: 30px;
         color: $white;
         background-color: $orange;
+    }
+}
+
+.menu-hover {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25), inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    a {
+        display: flex;
+        align-items: center;
+        svg {
+            flex-shrink: 0;
+        }
+        &:hover {
+            svg path {
+                fill: $orange;
+            }
+        }
     }
 }
 

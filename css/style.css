@@ -881,6 +881,10 @@ a:hover {
   background-color: transparent;
 }
 
+.desktop-scroll-header {
+  display: none;
+}
+
 .btn-1 {
   background-color: #FF9100;
   color: #fff;
@@ -888,8 +892,18 @@ a:hover {
   border: none;
 }
 
+.mobile-search input[type=search]:focus {
+  outline: none;
+}
+
+.mobile-search .bi-search::before {
+  color: #323232;
+}
+
 .mobile-menu,
-.mobile-menu-2 {
+.mobile-search,
+.mobile-menu-2,
+.desktop-scroll-header {
   z-index: 500;
 }
 
@@ -903,6 +917,30 @@ a:hover {
   font-size: 30px;
   color: #fff;
   background-color: #FF9100;
+}
+
+.menu-hover {
+  border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25), inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25), inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-hover a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-hover a svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.menu-hover a:hover svg path {
+  fill: #FF9100;
 }
 
 .z-index-10 {
