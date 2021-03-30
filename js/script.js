@@ -50,11 +50,7 @@ $('.mobile-menu-2-close').on('click', () => {
 
 /* sticky header */
 $(window).scroll(function() {
-    /* hide mobile menu on scroll */
-    $('.hs_mobilemenu').slideUp();
-    $('.hamburger').attr('data-status', 'menu-hidden');
-
-    var h_header = $('header').outerHeight();
+    var h_header = $('#header').outerHeight();
     var st = $(this).scrollTop();
     if (st > h_header) {
         $('.desktop-scroll-header').fadeIn(300);
@@ -64,6 +60,7 @@ $(window).scroll(function() {
 });
 
 
+$((function() { $(".hover-cart").mouseenter((function() { $(".hidden-cart").removeClass("d-none") })), $(".hover-cart").mouseleave((function() { $(".hidden-cart").addClass("d-none") })) }));
 
 var swiper = new Swiper('.swiper-banner', {
     slidesPerView: 1,
