@@ -275,6 +275,7 @@ a.hover-cart {
 .btn-group {
     z-index: 1;
     font-size: 0;
+    // display: none !important;
     .btn-check:checked+.btn {
         color: $black3;
         background-color: $white;
@@ -361,8 +362,8 @@ input::-webkit-inner-spin-button {
         &-2 {
             object-fit: contain;
             object-position: right top;
-            top: -100px;
-            height: 90%;
+            top: -50px;
+            height: 78%;
             width: auto;
         }
     }
@@ -1308,6 +1309,7 @@ button {
         font-size: 16px;
         &:hover,
         &:focus {
+            color: $white;
             background-color: darken($orange, 5);
         }
     }
@@ -1317,7 +1319,8 @@ button {
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
         &:hover,
         &:focus {
-            box-shadow: 0px 1px 5px rgba(34, 34, 34, 0.2);
+            color: $black2;
+            box-shadow: 0px 1px 10px rgba(34, 34, 34, 0.2);
         }
     }
     &-trans {
