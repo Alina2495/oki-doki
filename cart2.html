@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Онлайн-заказ пиццы и роллов в OkiDoki">
     <meta name="keywords" content="заказать еду, пицца в Казани, роллы">
-    <title>Личный кабинет - OkiDoki</title>
+    <title>Корзина - OkiDoki</title>
     <link rel="stylesheet" href="css/bootstrap-5.css" />
     <link rel="stylesheet" href="icons-main/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
@@ -53,7 +53,8 @@
             <div class="d-none mobile-menu bg-white d-flex flex-column position-absolute start-0 end-0 w-100 min-vh-100 overflow-auto">
                 <ul class="list-unstyled nav d-flex flex-column fw-5 max-vh-100">
                     <li class="border-top"><a class="nav-link py-3" href="menu.html">Меню</a></li>
-                    <li class="border-top"><a class="nav-link py-3" href="payment.html">Доставка и оплата</a></li>
+                    <li class="border-top"><a class="nav-link py-3" href="about.html">О нас</a></li>
+                    <li class="border-top"><a class="nav-link py-3" href="delivery.html">Доставка и оплата</a></li>
                     <li class="border-top"><a class="nav-link py-3" href="promotions.html">Акции</a></li>
                     <li class="border-top border-bottom"><a class="nav-link py-3" href="comments.html">Отзывы</a></li>
                 </ul>
@@ -73,50 +74,40 @@
         <div class="container position-relative pt-2">
             <!-- top nav -->
             <div class="d-flex justify-content-between align-items-center text-nowrap">
-                <!-- logo -->
                 <a href="index.html">
                     <img src="img/images/logo.svg" alt="">
                 </a>
-                <!-- address -->
                 <span class="d-none d-xxl-block"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#FF9100"/>
-                </svg>Казань, ул. Улица</span>
-                <!-- search -->
+                    </svg>Казань, ул. Улица</span>
                 <form class="mx-3 mb-2 my-3 my-lg-0 m-lg-0 search-form d-flex justify-content-between" action="/search.php">
                     <input required="" type="search" placeholder="Поиск по сайту..." aria-label="Search" class="search-input" name="search">
                     <button type="submit" class="search-btn bttn">Найти</button>
                 </form>
-                <!-- work hours -->
                 <span class="d-none d-xl-block"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#FF9100"/>
                     <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#FF9100"/>
                     </svg>
                     Ежедневно с 10:00 до 23:00</span>
-                <!-- telephone -->
                 <a href="tel:+7(123)456-78-90"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="#FF9100"/>
                     </svg>
-                +7 (123) 456-78-90</a>
+                    +7 (123) 456-78-90</a>
             </div>
             <!-- bottom nav -->
             <div class="d-flex justify-content-between align-items-center position-relative">
-                <!-- menu -->
-                <a class="py-3 menu-hover-link" href="menu.html"><svg class="me-1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="py-3 menu-hover-link" href=""><svg class="me-1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 15.1167H20V13.1167H4V15.1167ZM4 19.1167H20V17.1167H4V19.1167ZM4 11.1167H20V9.1167H4V11.1167ZM4 5.1167V7.1167H20V5.1167H4Z" fill="#FF9100"/>
                     </svg>
                     Меню</a>
-                <!-- delivery and payment -->
-                <a class="py-3" href="payment.html">Доставка и оплата</a>
-                <!-- promotions -->
+                <a class="py-3" href="about.html">О нас</a>
+                <a class="py-3" href="delivery.html">Доставка и оплата</a>
                 <a class="py-3" href="promotions.html">Акции</a>
-                <!-- comments -->
                 <a class="py-3" href="comments.html">Отзывы</a>
-                <!-- login or profile -->
                 <a class="py-3" href="login.html">Личный кабинет<svg class="ms-1" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 4.53563L7.6 6.08225L10.2 8.95455H0V11.164H10.2L7.6 14.0363L9 15.5829L14 10.0593L9 4.53563ZM18 17.7924H10V20.0019H18C19.1 20.0019 20 19.0076 20 17.7924V2.32616C20 1.11096 19.1 0.116699 18 0.116699H10V2.32616H18V17.7924Z" fill="#FF9100"/>
                     </svg>
                 </a>
-                <!-- cart -->
                 <a class="p-3 hover-cart" href="cart.html">
                     <svg class="me-1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.21 9.11672L12.83 2.55672C12.64 2.27672 12.32 2.13672 12 2.13672C11.68 2.13672 11.36 2.27672 11.17 2.56672L6.79 9.11672H2C1.45 9.11672 1 9.56672 1 10.1167C1 10.2067 1.01 10.2967 1.04 10.3867L3.58 19.6567C3.81 20.4967 4.58 21.1167 5.5 21.1167H18.5C19.42 21.1167 20.19 20.4967 20.43 19.6567L22.97 10.3867L23 10.1167C23 9.56672 22.55 9.11672 22 9.11672H17.21ZM9 9.11672L12 4.71672L15 9.11672H9ZM12 17.1167C10.9 17.1167 10 16.2167 10 15.1167C10 14.0167 10.9 13.1167 12 13.1167C13.1 13.1167 14 14.0167 14 15.1167C14 16.2167 13.1 17.1167 12 17.1167Z" fill="#FF9100"/>
@@ -310,366 +301,241 @@
     <header class="desktop-scroll-header fw-5 fs-20 position-fixed top-0 start-0 end-0 bg-white">
         <div class="container d-none d-lg-flex justify-content-between align-items-center py-4">
             <div class="row justify-content-between w-100 text-nowrap">
-                <div class="d-flex align-items-center justify-content-between">
-                    <!-- delivery and payment -->
-                    <a href="payment.html">Доставка и оплата</a>
-                    <!-- promotions -->
+                <div class="col-6 d-flex me-auto justify-content-between">
+                    <a href="about.html">О нас</a>
+                    <a href="delivery.html">Доставка и оплата</a>
                     <a href="promotions.html">Акции</a>
-                    <!-- comments -->
                     <a href="comments.html">Отзывы</a>
-                    <!-- login or profile -->
-                    <a href="login.html" class="me-3">Личный кабинет<svg class="ms-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <div class="col-5 col-xl-6 d-flex justify-content-between">
+                    <a href="login.html">Личный кабинет<svg class="ms-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 4.41893L7.6 5.96555L10.2 8.83786H0V11.0473H10.2L7.6 13.9196L9 15.4662L14 9.94259L9 4.41893ZM18 17.6757H10V19.8852H18C19.1 19.8852 20 18.8909 20 17.6757V2.20946C20 0.994259 19.1 0 18 0H10V2.20946H18V17.6757Z" fill="#FF9100"/>
                         </svg>
-                    </a>
-                    <!-- telephone -->
+                        </a>
                     <a class="d-none d-xl-block" href="tel:+7(123)456-78-90"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="#FF9100"/>
-                    </svg>+7 (123) 456-78-90</a>
-                    <!-- cart -->
-                    <a class="ms-3" href="cart.html"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg>+7 (123) 456-78-90</a>
+                    <a href="cart.html"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.21 9.11672L12.83 2.55672C12.64 2.27672 12.32 2.13672 12 2.13672C11.68 2.13672 11.36 2.27672 11.17 2.56672L6.79 9.11672H2C1.45 9.11672 1 9.56672 1 10.1167C1 10.2067 1.01 10.2967 1.04 10.3867L3.58 19.6567C3.81 20.4967 4.58 21.1167 5.5 21.1167H18.5C19.42 21.1167 20.19 20.4967 20.43 19.6567L22.97 10.3867L23 10.1167C23 9.56672 22.55 9.11672 22 9.11672H17.21ZM9 9.11672L12 4.71672L15 9.11672H9ZM12 17.1167C10.9 17.1167 10 16.2167 10 15.1167C10 14.0167 10.9 13.1167 12 13.1167C13.1 13.1167 14 14.0167 14 15.1167C14 16.2167 13.1 17.1167 12 17.1167Z" fill="#FF9100"/>
                         </svg>
-                        Корзина (0)
-                    </a>
+                        Корзина (0)</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- MAIN -->
     <main>
         <section class="container py-5">
-            <h1>Личный кабинет</h1>
-            <div class="row g-0 flex-column flex-lg-row">
-                <!-- profile tabs -->
-                <div class="col-lg-3">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <!-- profile tab -->
-                        <button class="v-tab active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Профиль</button>
-                        <!-- orders history -->
-                        <button class="v-tab" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">История заказов</button>
-                        <!-- delivery history -->
-                        <button class="v-tab" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Адреса доставки</button>
-                        <!-- logout -->
-                        <a class="v-tab" href="login.html">Выйти</a>
-                    </div>
-                </div>
-                <!-- profile tabs content -->
-                <div class="col-lg-9 mt-4 mt-lg-0">
-                    <div class="tab-content border" id="v-pills-tabContent">
-                        <!-- profile tab -->
-                        <div class="tab-pane fade show active profile-tab-content" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <h3 class="mb-3">Персональная информация</h3>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Имя:</dt>
-                                <dd class="">Анастасия</dd>
-                            </dl>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Телефон:</dt>
-                                <dd>79384561236</dd>
-                            </dl>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Электронная почта:</dt>
-                                <dd>nastay@mail.ru</dd>
-                            </dl>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Дата рождения:</dt>
-                                <dd>25.01.1986</dd>
-                            </dl>
-                            <!-- edit profile modal button -->
-                            <div class="d-inline-flex rounded-pill align-items-center bg-light-gray w-auto p-1 flex-wrap flex-sm-nowrap">
-                                <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#editProfileModal">Редактировать</button>
-                                <a href="pass-change.html" class="text-body flex-grow-1 text-center text-decoration-underline text-nowrap px-4 py-3">Изменить пароль</a>
-                            </div>
+            <!-- section title -->
+            <h1>Корзина</h1>
+            <!-- orders list start -->
+            <div class="shop-list">
+                <div class="shop-item">
+                    <div class="shop-item-top">
+                        <div class="shop-item-img">
+                            <img src="img/images/product-4.jpg" alt="Пицца Маргарита">
                         </div>
-                        <!-- profile orders -->
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <div class="table-responsive">
-                                <table class="table orders_table mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>Номер заказа</th>
-                                            <th>Стоимость</th>
-                                            <th>Статус</th>
-                                            <th>Действия</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="accordion" id="accordionExample">
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class=" dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="shop-item-text">
+                            <div class="shop-item-title">
+                                Пицца Маргарита
                             </div>
-                        </div>
-                        <!-- profile delivery -->
-                        <div class="tab-pane fade delivery-tab-content" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <div class="delivery-top">
-                                <h3 class="mb-3">Адреса доставки</h3>
-                                <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#addNewAddressModal">
-                                    <svg class="me-3" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 8.37231H8V14.3723H6V8.37231H0V6.37231H6V0.372314H8V6.37231H14V8.37231Z" fill="#323232"/>
-                                    </svg>
-                                    <span>Добавить новый адрес</span>
-                                </button>
+                            <div class="shop-item-desc">
+                                Тесто, томатный соус, сыр, томаты, базилик, орегано
                             </div>
-                            <!-- delivery addresses list start -->
-                            <div class="delivery-list">
-                                <div class="delivery-item">
-                                    <h3 class="mb-4">Адрес 1</h3>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Улица:</dt>
-                                        <dd>Казань</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Дом:</dt>
-                                        <dd>Юлиуса Фучика</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Квартира:</dt>
-                                        <dd>78</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Подъезд:</dt>
-                                        <dd>125</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Код двери:</dt>
-                                        <dd>1</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Этаж:</dt>
-                                        <dd>6</dd>
-                                    </dl>
-                                    <div class="d-inline-flex rounded-pill align-items-center bg-light-gray w-auto p-1 flex-wrap flex-sm-nowrap">
-                                        <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#editAddressModal">Редактировать</button>
-                                        <button class="flex-grow-1 text-center text-decoration-underline text-nowrap px-4 py-3">Удалить</button>
-                                    </div>
-                                </div>
-                                <div class="delivery-item">
-                                    <h3 class="mb-4">Адрес 2</h3>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Улица:</dt>
-                                        <dd>Казань</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Дом:</dt>
-                                        <dd>Кул Гали</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Квартира:</dt>
-                                        <dd>78</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Подъезд:</dt>
-                                        <dd>125</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Код двери:</dt>
-                                        <dd>1</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Этаж:</dt>
-                                        <dd>6</dd>
-                                    </dl>
-                                    <div class="d-inline-flex rounded-pill align-items-center bg-light-gray w-auto p-1 flex-wrap flex-sm-nowrap">
-                                        <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#editAddressModal">Редактировать</button>
-                                        <button class="flex-grow-1 text-center text-decoration-underline text-nowrap px-4 py-3">Удалить</button>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <div class="shop-item-addition">Дополнение: перец халапеньо; грибы; оливки, бекон, сыр</div>
                         </div>
                     </div>
-                    <!-- delivery addresses list end -->
+                    <div class="shop-item-bottom">
+                        <!-- product count -->
+                        <div class="col-5 col-md-4 col-lg-5 d-flex align-items-center justify-content-between rounded-pill bg-light-gray">
+                            <button class="p-3">
+                                <svg width="18" height="4" viewBox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.9297 3.4834H0.429688V0.983398H17.9297V3.4834Z" fill="#323232"/>
+                                </svg>
+                            </button>
+                            <input class="w-50 fw-5 border-0 bg-transparent text-center" type="number" min="1" minlength="1" maxlength="2" value="7" name="" id="">
+                            <button class="p-3">
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 8.37231H8V14.3723H6V8.37231H0V6.37231H6V0.372314H8V6.37231H14V8.37231Z" fill="#323232"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- price -->
+                        <div class="text-nowrap fw-6">
+                            <span>360</span><span> ₽</span>
+                        </div>
+                        <!-- delete btn -->
+                        <button class="btn-trans" title="Удалить из корзины">
+                            <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 28.9834C9 30.6334 10.35 31.9834 12 31.9834H24C25.65 31.9834 27 30.6334 27 28.9834V10.9834H9V28.9834ZM28.5 6.4834H23.25L21.75 4.9834H14.25L12.75 6.4834H7.5V9.4834H28.5V6.4834Z" fill="#323232"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
+            <!-- orders list end -->
+            <div class="d-flex flex-column-reverse flex-md-row align-items-md-end justify-content-between align-items-lg-end flex-wrap">
+                <!-- back to menu -->
+                <!-- <a href="menu.html" class="btn-white px-4 py-3 mt-3">
+                    <svg class="me-2" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.668 5.1167H4.49797L8.07797 1.5267L6.66797 0.116699L0.667969 6.1167L6.66797 12.1167L8.07797 10.7067L4.49797 7.1167H18.668V5.1167Z" fill="#323232"/>
+                    </svg>
+                    <span>Вернуться в меню</span>
+                </a> -->
+                <div class="d-flex flex-column align-items-lg-end">
+                    <div class="shop-items-price d-flex justify-content-between justify-content-lg-end">
+                        <div class="me-5">Сумма заказа: </div>
+                        <div class="shop-items-total-price c-orange text-nowrap">1960<span> ₽</span></div>
+                    </div>
+                    <!-- <a href="ordering.html" type="button" class="btn-orange">Оформить заказ</a> -->
+                </div>
+            </div>
+            <form>
+                <div class="cart-form mt-lg-4">
+                    <div class="row d-inline-flex flex-lg-nowrap border-bottom mb-5">
+                        <h6 class="col-lg-auto">Заполните данные для оформления заказа</h6>
+                        <p class="col-lg-auto"><small>(<span class="required"></span> - поля обязательные для заполнения)</small></p>
+                    </div>
+
+                    <div class="row border-bottom mb-5">
+                        <div class="form col-md-6 col-lg-5 pb-4">
+                            <fieldset class="mb-4">
+                                <label class="form-label required" for="orderUserName">Имя</label>
+                                <input class="form-control py-3" type="text" id="orderUserName" placeholder="Имя" required>
+                                <div class="invalid-feedback">Заполните это поле</div>
+                            </fieldset>
+                            <fieldset class="mb-4">
+                                <label class="form-label required" for="orderUserSurname">Фамилия</label>
+                                <input class="form-control py-3" type="text" id="orderUserSurname" placeholder="Фамилия" required>
+                                <div class="invalid-feedback">Заполните это поле</div>
+                            </fieldset>
+                            <fieldset class="mb-4">
+                                <label class="form-label required" for="orderUserTel">Номер телефона</label>
+                                <input class="form-control py-3" type="tel" id="orderUserTel" placeholder="Номер телефона" required>
+                                <div class="invalid-feedback">Заполните это поле</div>
+                            </fieldset>
+                            <fieldset class="mb-4">
+                                <label class="form-label required" for="orderUserEmail">Электронная почта</label>
+                                <input class="form-control py-3" type="email" id="orderUserEmail" placeholder="Электронная почта" required>
+                                <div class="invalid-feedback">Заполните это поле</div>
+                            </fieldset>
+                            <fieldset class="mb-4">
+                                <label class="form-label required" for="orderUserRegion">Район</label>
+                                <select class="form-select py-3" id="orderUserRegion" required>
+                              <option selected disabled value="">Выберите район доставки</option>
+                              <option>Ново- Савинский</option>
+                              <option>Кировский р-н</option>
+                              <option>Советский р-н</option>
+                              <option>Приволжский р-н</option>
+                              <option>Вахитовский р-н</option>
+                              <option>Московский р-н</option>
+                              <option>Авиастроительный р-н</option>
+                            </select>
+                                <div class="invalid-feedback">Район доставки</div>
+                            </fieldset>
+
+                            <fieldset class="mb-4">
+                                <label class="form-label required" for="orderUserStreet">Улица</label>
+                                <input class="form-control py-3" type="text" id="orderUserStreet" placeholder="Улица" required>
+                                <div class="invalid-feedback">Заполните это поле</div>
+                            </fieldset>
+                            <div class="row">
+                                <fieldset class="mb-4 col-6">
+                                    <label class="form-label required" for="orderUserHouse">Дом</label>
+                                    <input class="form-control py-3" type="text" id="orderUserHouse" placeholder="Дом" required>
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                                <fieldset class="mb-4 col-6">
+                                    <label class="form-label" for="orderUserEntrance">Подъезд</label>
+                                    <input class="form-control py-3" type="text" id="orderUserEntrance" placeholder="Подъезд">
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                            </div>
+                            <div class="row">
+                                <fieldset class="mb-4 col-6">
+                                    <label class="form-label" for="orderUserFloor">Этаж</label>
+                                    <input class="form-control py-3" type="text" id="orderUserFloor" placeholder="Этаж">
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                                <fieldset class="mb-4 col-6">
+                                    <label class="form-label" for="orderUserApartment">Квартира (офис)</label>
+                                    <input class="form-control py-3" type="text" id="orderUserApartment" placeholder="Квартира (офис)">
+                                    <div class="invalid-feedback">Заполните это поле</div>
+                                </fieldset>
+                            </div>
+                            <fieldset>
+                                <label class="form-label" for="commentAuthorText">Комментарий</label>
+                                <textarea class="form-control py-3" id="commentAuthorText" rows="5" placeholder="Комментарий к заказу (по желанию)"></textarea>
+                                <div class="invalid-feedback">Заполните это поле</div>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6 col-lg-5 px-lg-4">
+                            <!-- delivery type -->
+                            <div class="mb-5">
+                                <div class="required mb-2">Способ доставки</div>
+                                <div class="border rounded-3 px-3 py-4 bg-white">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="deliveryType1" name="delivery-type" required>
+                                        <label class="form-check-label" for="deliveryType1">Самовывоз</label>
+                                        <p><small>(адреса магазинов в разделе <a href="contacts.html">Контакты</a>)</small></p>
+                                    </div>
+                                    <div class="form-check border-top pt-3">
+                                        <input type="radio" class="form-check-input" id="deliveryType2" name="delivery-type" required>
+                                        <label class="form-check-label" for="deliveryType2">Курьерская доставка</label>
+                                        <div class="invalid-feedback">Выберите способ доставки</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- payment type -->
+                            <div class="mb-5">
+                                <div class="required mb-2">Способ оплаты</div>
+                                <div class="border rounded-3 px-3 py-4 bg-white">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="paymentType1" name="payment-type" required>
+                                        <label class="form-check-label" for="paymentType1">Наличный расчёт</label>
+                                        <p><small>(Действует только на самовывоз)</small></p>
+                                    </div>
+                                    <div class="form-check border-top pt-3">
+                                        <input type="radio" class="form-check-input" id="paymentType2" name="payment-type" required>
+                                        <label class="form-check-label" for="paymentType2">Оплата картой</label>
+                                        <div class="invalid-feedback">Выберите способ оплаты</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-6 ">
+                    <div class="row mb-4">
+                        <div class="col-md-2 mb-2 fs-5 fw-6">Итого:</div>
+                        <div class="col-md-10">
+                            <div class="d-flex flex-nowrap justify-content-between align-items-start mb-2">
+                                <div>Стоимость:</div>
+                                <div class="fw-6">938<span> ₽</span></div>
+                            </div>
+                            <div class="d-flex flex-nowrap justify-content-between align-items-start">
+                                <div>Доставка:</div>
+                                <div class="fw-6">Бесплатно</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="fw-6 fs-5">Всего к оплате:</div>
+                        <div class="fw-6 fs-5">938<span> ₽</span></div>
+                    </div>
+                    <button type="submit" class="btn-orange py-3 px-5 lh-1 my-4">Оформить заказ</button>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input flex-shrink-0 mt-0" id="validationFormCheck1" required>
+                        <label class="form-check-label text-muted d-inline" for="validationFormCheck1">Я согласен на </label><a href="" class="text-decoration-underline link-dark">обработку персональных данных</a>
+                        <div class="invalid-feedback">Примите условия использования</div>
+                    </div>
+                </div>
+            </form>
+
         </section>
     </main>
+    <!-- MAIN CONTENT END -->
 
     <!-- FOOTER -->
     <footer class="mt-auto">
@@ -700,123 +566,12 @@
         </div>
     </footer>
 
-    <!-- EDIT PROFILE MODAL START -->
-    <div class="modal fade" id="editProfileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content py-xl-3 px-4 px-xl-5">
-                <div class="modal-header px-0 border-0">
-                    <h3 class="modal-title" id="editProfileLabel">Редактировать данные</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body px-0">
-                    <input class="form-control mb-3" type="text" placeholder="Имя">
-                    <input class="form-control mb-3" type="tel" placeholder="Телефон">
-                    <input class="form-control mb-3" type="email" placeholder="Электронная почта">
-                    <input class="form-control mb-3" type="password" placeholder="Дата рождения">
-                    <fieldset class="d-flex mb-3">
-                        <input class="form-check-input" type="checkbox" name="" id="check1"><label for="check1" class="form-check-label">Получать информацию о&#160;скидках и&#160;акциях</label>
-                    </fieldset>
-                    <button class="btn-orange">Сохранить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- EDIT PROFILE MODAL END -->
-
-    <!-- ADD NEW DELIVERY ADDRESS MODAL START -->
-    <div class="modal fade" id="addNewAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewAddressModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content py-xl-3 px-4 px-xl-5">
-                <div class="modal-header px-0 border-0">
-                    <h3 class="modal-title" id="addNewAddressLabel">Адрес доставки</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body px-0">
-                    <input class="form-control mb-3" type="text" placeholder="Название адреса" title="Название адреса">
-                    <input class="form-control mb-3" type="text" placeholder="Улица" title="Улица">
-                    <input class="form-control mb-3" type="text" placeholder="Дом" title="Дом">
-                    <fieldset class="d-flex flex-column flex-lg-row wrap-lg-nowrap justify-content-between">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Квартира" title="Квартира">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Подъезд" title="Подъезд">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Код двери" title="Код двери">
-                        <input class="form-control mb-3" type="text" placeholder="Этаж" title="Этаж">
-                    </fieldset>
-                    <textarea class="form-control mb-3" name="" id="" cols="30" rows="4" placeholder="Комментарий к адресу" title="Комментарий к адресу"></textarea>
-                    <fieldset class="d-flex mb-3">
-                        <input class="form-check-input" type="checkbox" name="" id="check2"><label for="check2" class="form-check-label">Выбрать этот адрес по&#160;умолчанию</label>
-                    </fieldset>
-                    <button class="btn-orange">Сохранить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ADD NEW DELIVERY ADDRESS MODAL END -->
-
-    <!-- EDIT DELIVERY ADDRESS MODAL START -->
-    <div class="modal fade" id="editAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editAddressLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content py-xl-3 px-4 px-xl-5">
-                <div class="modal-header px-0 border-0">
-                    <h3 class="modal-title" id="editAddressLabel">Редактировать адрес доставки</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body px-0">
-                    <input class="form-control mb-3" type="text" placeholder="Название адреса" value="Казань" title="Название адреса">
-                    <input class="form-control mb-3" type="text" placeholder="Улица" value="Фучика" title="Улица">
-                    <input class="form-control mb-3" type="text" placeholder="Дом" value="3a" title="Дом">
-                    <fieldset class="d-flex flex-column flex-lg-row wrap-lg-nowrap justify-content-between">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Квартира" value="25" title="Квартира">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Подъезд" value="6" title="Подъезд">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Код двери" value="25" title="Код двери">
-                        <input class="form-control mb-3" type="text" placeholder="Этаж" value="3" title="Этаж">
-                    </fieldset>
-                    <textarea class="form-control mb-3" name="" id="" cols="30" rows="4" placeholder="Комментарий к адресу" title="Комментарий к адресу"></textarea>
-                    <fieldset class="d-flex mb-3">
-                        <input class="form-check-input" type="checkbox" name="" id="check3"><label for="check3" class="form-check-label">Выбрать этот адрес по&#160;умолчанию</label>
-                    </fieldset>
-                    <button class="btn-orange">Сохранить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- EDIT DELIVERY ADDRESS MODAL END -->
-
-    <!-- Add Comment Modal -->
-    <div class="modal fade" id="AddCommentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AddCommentModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered comment-modal">
-            <form class="modal-content p-sm-4 px-xl-5 border-0 needs-validation" novalidate>
-                <div class="modal-header border-0">
-                    <h3 class="modal-title" id="AddCommentModalLabel">Оставить отзыв</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <fieldset class="mb-3">
-                        <label class="form-label" for="commentAuthorName">Имя</label>
-                        <input class="form-control py-3" type="text" id="commentAuthorName" placeholder="Имя" required>
-                    </fieldset>
-                    <fieldset class="mb-3">
-                        <label class="form-label" for="commentAuthorEmail">Электронная почта</label>
-                        <input class="form-control py-3" type="email" id="commentAuthorEmail" placeholder="Электронная почта" required>
-                    </fieldset>
-                    <fieldset>
-                        <label class="form-label" for="commentAuthorText">Ваш отзыв</label>
-                        <textarea class="form-control py-3" id="commentAuthorText" rows="7" placeholder="Напишите ваш отзыв" required></textarea>
-                    </fieldset>
-                </div>
-                <div class="modal-footer border-0 justify-content-start justify-content-lg-start">
-                    <button type="submit" class="btn color-white bg-orange rounded-pill py-3 px-5 lh-1">Отправить</button>
-                    <button type="reset" class="btn bg-gray rounded-pill py-3 px-5 lh-1" data-bs-dismiss="modal">Отменить</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
     <!-- DISHES MOBILE MENU 2 -->
     <div class="d-none mobile-menu-2 bg-orange min-vh-100 d-flex flex-column flex-nowrap justify-content-end position-fixed bottom-0 start-0 end-0 w-100">
         <!-- button close -->
         <button class="mobile-menu-2-close btn-trans ms-auto mb-auto mt-3 me-2 position-absolute top-0 end-0">
-            <i class="bi bi-x fs-20"></i>
-        </button>
+        <i class="bi bi-x fs-20"></i>
+    </button>
         <!-- dishes menu -->
         <ul class="list-unstyled nav d-flex flex-column flex-nowrap bg-white overflow-auto">
             <li class="mobile-menu-2-close"><a class="nav-link py-3" href="menu.html">Популярное</a></li>

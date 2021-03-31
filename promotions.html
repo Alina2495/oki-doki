@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Онлайн-заказ пиццы и роллов в OkiDoki">
     <meta name="keywords" content="заказать еду, пицца в Казани, роллы">
-    <title>Личный кабинет - OkiDoki</title>
+    <title>Акции - OkiDoki</title>
     <link rel="stylesheet" href="css/bootstrap-5.css" />
     <link rel="stylesheet" href="icons-main/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
@@ -339,495 +339,138 @@
 
     <!-- MAIN -->
     <main>
-        <section class="container py-5">
-            <h1>Личный кабинет</h1>
-            <div class="row g-0 flex-column flex-lg-row">
-                <!-- profile tabs -->
-                <div class="col-lg-3">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <!-- profile tab -->
-                        <button class="v-tab active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Профиль</button>
-                        <!-- orders history -->
-                        <button class="v-tab" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">История заказов</button>
-                        <!-- delivery history -->
-                        <button class="v-tab" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Адреса доставки</button>
-                        <!-- logout -->
-                        <a class="v-tab" href="login.html">Выйти</a>
-                    </div>
-                </div>
-                <!-- profile tabs content -->
-                <div class="col-lg-9 mt-4 mt-lg-0">
-                    <div class="tab-content border" id="v-pills-tabContent">
-                        <!-- profile tab -->
-                        <div class="tab-pane fade show active profile-tab-content" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <h3 class="mb-3">Персональная информация</h3>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Имя:</dt>
-                                <dd class="">Анастасия</dd>
-                            </dl>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Телефон:</dt>
-                                <dd>79384561236</dd>
-                            </dl>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Электронная почта:</dt>
-                                <dd>nastay@mail.ru</dd>
-                            </dl>
-                            <dl class="d-flex flex-wrap">
-                                <dt class="text-muted">Дата рождения:</dt>
-                                <dd>25.01.1986</dd>
-                            </dl>
-                            <!-- edit profile modal button -->
-                            <div class="d-inline-flex rounded-pill align-items-center bg-light-gray w-auto p-1 flex-wrap flex-sm-nowrap">
-                                <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#editProfileModal">Редактировать</button>
-                                <a href="pass-change.html" class="text-body flex-grow-1 text-center text-decoration-underline text-nowrap px-4 py-3">Изменить пароль</a>
+        <section class="container my-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Все акции</li>
+                </ol>
+            </nav>
+        </section>
+        <section class="promotions-page mb-5">
+            <div class="container">
+                <h1>Спецпредложения и акции</h1>
+                <div class="row row-cols-md-2 row-cols-xl-3 g-3 g-xl-4">
+                    <div>
+                        <div class="promotion-card card overflow-hidden">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion.jpg" alt="">
                             </div>
-                        </div>
-                        <!-- profile orders -->
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <div class="table-responsive">
-                                <table class="table orders_table mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>Номер заказа</th>
-                                            <th>Стоимость</th>
-                                            <th>Статус</th>
-                                            <th>Действия</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="accordion" id="accordionExample">
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class=" dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Именинникам скидка -20%</h6>
+                                <p>Именинникам дарим скидку -20% на все роллы и пиццу. Скидка не действует на сеты, десерты, снеки. Акции и скидки не суммируются. Для получения подарка нужно предъявить паспорт курьеру. Акция действует 3 дня до и 3 дня после ДР.
+                                    Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
                             </div>
-                        </div>
-                        <!-- profile delivery -->
-                        <div class="tab-pane fade delivery-tab-content" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <div class="delivery-top">
-                                <h3 class="mb-3">Адреса доставки</h3>
-                                <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#addNewAddressModal">
-                                    <svg class="me-3" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 8.37231H8V14.3723H6V8.37231H0V6.37231H6V0.372314H8V6.37231H14V8.37231Z" fill="#323232"/>
-                                    </svg>
-                                    <span>Добавить новый адрес</span>
-                                </button>
-                            </div>
-                            <!-- delivery addresses list start -->
-                            <div class="delivery-list">
-                                <div class="delivery-item">
-                                    <h3 class="mb-4">Адрес 1</h3>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Улица:</dt>
-                                        <dd>Казань</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Дом:</dt>
-                                        <dd>Юлиуса Фучика</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Квартира:</dt>
-                                        <dd>78</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Подъезд:</dt>
-                                        <dd>125</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Код двери:</dt>
-                                        <dd>1</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Этаж:</dt>
-                                        <dd>6</dd>
-                                    </dl>
-                                    <div class="d-inline-flex rounded-pill align-items-center bg-light-gray w-auto p-1 flex-wrap flex-sm-nowrap">
-                                        <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#editAddressModal">Редактировать</button>
-                                        <button class="flex-grow-1 text-center text-decoration-underline text-nowrap px-4 py-3">Удалить</button>
-                                    </div>
-                                </div>
-                                <div class="delivery-item">
-                                    <h3 class="mb-4">Адрес 2</h3>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Улица:</dt>
-                                        <dd>Казань</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Дом:</dt>
-                                        <dd>Кул Гали</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Квартира:</dt>
-                                        <dd>78</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Подъезд:</dt>
-                                        <dd>125</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Код двери:</dt>
-                                        <dd>1</dd>
-                                    </dl>
-                                    <dl class="d-flex flex-wrap">
-                                        <dt>Этаж:</dt>
-                                        <dd>6</dd>
-                                    </dl>
-                                    <div class="d-inline-flex rounded-pill align-items-center bg-light-gray w-auto p-1 flex-wrap flex-sm-nowrap">
-                                        <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#editAddressModal">Редактировать</button>
-                                        <button class="flex-grow-1 text-center text-decoration-underline text-nowrap px-4 py-3">Удалить</button>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                    <!-- delivery addresses list end -->
+                    <div>
+                        <div class="promotion-card card overflow-hidden">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion2.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Новым клиентам дарим любой ролл или пиццу на выбор</h6>
+                                <p>К первому заказу дарим пиццу 25 см или любой ролл на выбор клиента, не превышающую по цене 329 ₽. Минимальная сумма заказа 1 000 ₽. Акции и скидки не суммируются. Необходимо сообщить оператору что вы новый клиент. Пиццу
+                                    или ролл к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="promotion-card card overflow-hidden">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion3.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Любая пицца в подарок при заказе от 1 200 ₽</h6>
+                                <p>При заказе на сумму от 1 200 ₽ дарим любую пиццу диаметром 25 см на выбор клиента. Акция не действует при заказе сетов. Акции и скидки не суммируются. Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется
+                                    с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="promotion-card card overflow-hidden">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/promotion3.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Любая пицца в подарок при заказе от 1 200 ₽</h6>
+                                <p>При заказе на сумму от 1 200 ₽ дарим любую пиццу диаметром 25 см на выбор клиента. Акция не действует при заказе сетов. Акции и скидки не суммируются. Скидки и подарки к вашему заказу добавляет оператор. Оператор свяжется
+                                    с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="promotion-card card overflow-hidden">
+                            <div class="img-wrapper overflow-hidden position-relative">
+                                <img class="position-absolute top-0 left-0 w-100 h-100" src="img/images/promotion2.jpg" alt="">
+                            </div>
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1">
+                                <h6>Новым клиентам дарим любой ролл или пиццу на выбор</h6>
+                                <p>К первому заказу дарим пиццу 25 см или любой ролл на выбор клиента, не превышающую по цене 329 ₽. Минимальная сумма заказа 1 000 ₽. Акции и скидки не суммируются. Необходимо сообщить оператору что вы новый клиент. Пиццу
+                                    или ролл к вашему заказу добавляет оператор. Оператор свяжется с вами в течении 10 мин. после вашего заказа.</p>
+                                <a href="promotion.html" class="stretched-link mt-auto c-orange">Подробнее
+                                <svg class="ms-2" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#F08601"/>
+                                </svg> 
+                            </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="mt-auto">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-lg-3 py-3">
-                    <div>@ 2021 «‎ОкиДоки»</div>
-                    <a class="c-orange" href="privacy-policy.html">Политика конфиденциальности</a>
+                <div class="col-lg-2 py-3">
+                    <a href="index.html" class="mb-3 d-block" title="На главную">
+                        <img class="logo" width="180" height="44" src="img/images/logo.png" alt="Суши Бомба">
+                    </a>
+                    <div>@sushibomba 2021</div>
                 </div>
-                <nav class="col-lg-6 col-xl-5 py-2">
+                <nav class="col-lg-5 py-2">
                     <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-between mb-lg-0">
-                        <li class="py-1"><a href="menu.html">Меню</a></li>
-                        <li class="py-1"><a href="promotions.html">Акции</a></li>
-                        <li class="py-1"><a href="payment.html">Доставка и оплата</a></li>
-                        <li class="py-1"><a href="comments.html">Отзывы</a></li>
-                        <li class="py-1"><a href="contacts.html">Контакты</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="promotions.html">Акции</a></li>
+                        <li><a href="payment.html">Доставка и оплата</a></li>
+                        <li><a href="comments.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="col-lg-3 col-xl-4 py-3 text-lg-end">
-                    <address class="m-0">
-                    <a class="d-flex align-items-center text-uppercase  justify-content-xl-end" target="_blank" rel="noopener noreferrer" href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
-                        <span class="me-2">Создание и продвижение сайтов</span>
-                        <img width="50" height="34" src="img/images/asm.png" alt="Веб-студия AsmPromo">
-                    </a>
-                </address>
+                <div class="col-lg-3 py-3 text-lg-end">
+                    <a href="privacy-policy.html">Политика конфиденциальности</a>
+                    <address class="m-0 mt-2">
+                        <a class="d-flex align-items-center text-uppercase justify-content-lg-between" target="_blank" rel="noopener noreferrer" href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
+                            <span class="me-2">Создание и продвижение сайтов</span>
+                            <img width="50" height="34" src="img/images/asm-promo.png" alt="Веб-студия AsmPromo">
+                        </a>
+                    </address>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- EDIT PROFILE MODAL START -->
-    <div class="modal fade" id="editProfileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content py-xl-3 px-4 px-xl-5">
-                <div class="modal-header px-0 border-0">
-                    <h3 class="modal-title" id="editProfileLabel">Редактировать данные</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body px-0">
-                    <input class="form-control mb-3" type="text" placeholder="Имя">
-                    <input class="form-control mb-3" type="tel" placeholder="Телефон">
-                    <input class="form-control mb-3" type="email" placeholder="Электронная почта">
-                    <input class="form-control mb-3" type="password" placeholder="Дата рождения">
-                    <fieldset class="d-flex mb-3">
-                        <input class="form-check-input" type="checkbox" name="" id="check1"><label for="check1" class="form-check-label">Получать информацию о&#160;скидках и&#160;акциях</label>
-                    </fieldset>
-                    <button class="btn-orange">Сохранить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- EDIT PROFILE MODAL END -->
-
-    <!-- ADD NEW DELIVERY ADDRESS MODAL START -->
-    <div class="modal fade" id="addNewAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewAddressModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content py-xl-3 px-4 px-xl-5">
-                <div class="modal-header px-0 border-0">
-                    <h3 class="modal-title" id="addNewAddressLabel">Адрес доставки</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body px-0">
-                    <input class="form-control mb-3" type="text" placeholder="Название адреса" title="Название адреса">
-                    <input class="form-control mb-3" type="text" placeholder="Улица" title="Улица">
-                    <input class="form-control mb-3" type="text" placeholder="Дом" title="Дом">
-                    <fieldset class="d-flex flex-column flex-lg-row wrap-lg-nowrap justify-content-between">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Квартира" title="Квартира">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Подъезд" title="Подъезд">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Код двери" title="Код двери">
-                        <input class="form-control mb-3" type="text" placeholder="Этаж" title="Этаж">
-                    </fieldset>
-                    <textarea class="form-control mb-3" name="" id="" cols="30" rows="4" placeholder="Комментарий к адресу" title="Комментарий к адресу"></textarea>
-                    <fieldset class="d-flex mb-3">
-                        <input class="form-check-input" type="checkbox" name="" id="check2"><label for="check2" class="form-check-label">Выбрать этот адрес по&#160;умолчанию</label>
-                    </fieldset>
-                    <button class="btn-orange">Сохранить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ADD NEW DELIVERY ADDRESS MODAL END -->
-
-    <!-- EDIT DELIVERY ADDRESS MODAL START -->
-    <div class="modal fade" id="editAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editAddressLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content py-xl-3 px-4 px-xl-5">
-                <div class="modal-header px-0 border-0">
-                    <h3 class="modal-title" id="editAddressLabel">Редактировать адрес доставки</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body px-0">
-                    <input class="form-control mb-3" type="text" placeholder="Название адреса" value="Казань" title="Название адреса">
-                    <input class="form-control mb-3" type="text" placeholder="Улица" value="Фучика" title="Улица">
-                    <input class="form-control mb-3" type="text" placeholder="Дом" value="3a" title="Дом">
-                    <fieldset class="d-flex flex-column flex-lg-row wrap-lg-nowrap justify-content-between">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Квартира" value="25" title="Квартира">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Подъезд" value="6" title="Подъезд">
-                        <input class="form-control mb-3 me-lg-2" type="text" placeholder="Код двери" value="25" title="Код двери">
-                        <input class="form-control mb-3" type="text" placeholder="Этаж" value="3" title="Этаж">
-                    </fieldset>
-                    <textarea class="form-control mb-3" name="" id="" cols="30" rows="4" placeholder="Комментарий к адресу" title="Комментарий к адресу"></textarea>
-                    <fieldset class="d-flex mb-3">
-                        <input class="form-check-input" type="checkbox" name="" id="check3"><label for="check3" class="form-check-label">Выбрать этот адрес по&#160;умолчанию</label>
-                    </fieldset>
-                    <button class="btn-orange">Сохранить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- EDIT DELIVERY ADDRESS MODAL END -->
-
-    <!-- Add Comment Modal -->
-    <div class="modal fade" id="AddCommentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AddCommentModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered comment-modal">
-            <form class="modal-content p-sm-4 px-xl-5 border-0 needs-validation" novalidate>
-                <div class="modal-header border-0">
-                    <h3 class="modal-title" id="AddCommentModalLabel">Оставить отзыв</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <fieldset class="mb-3">
-                        <label class="form-label" for="commentAuthorName">Имя</label>
-                        <input class="form-control py-3" type="text" id="commentAuthorName" placeholder="Имя" required>
-                    </fieldset>
-                    <fieldset class="mb-3">
-                        <label class="form-label" for="commentAuthorEmail">Электронная почта</label>
-                        <input class="form-control py-3" type="email" id="commentAuthorEmail" placeholder="Электронная почта" required>
-                    </fieldset>
-                    <fieldset>
-                        <label class="form-label" for="commentAuthorText">Ваш отзыв</label>
-                        <textarea class="form-control py-3" id="commentAuthorText" rows="7" placeholder="Напишите ваш отзыв" required></textarea>
-                    </fieldset>
-                </div>
-                <div class="modal-footer border-0 justify-content-start justify-content-lg-start">
-                    <button type="submit" class="btn color-white bg-orange rounded-pill py-3 px-5 lh-1">Отправить</button>
-                    <button type="reset" class="btn bg-gray rounded-pill py-3 px-5 lh-1" data-bs-dismiss="modal">Отменить</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- DISHES MOBILE MENU 2 -->
-    <div class="d-none mobile-menu-2 bg-orange min-vh-100 d-flex flex-column flex-nowrap justify-content-end position-fixed bottom-0 start-0 end-0 w-100">
-        <!-- button close -->
-        <button class="mobile-menu-2-close btn-trans ms-auto mb-auto mt-3 me-2 position-absolute top-0 end-0">
-            <i class="bi bi-x fs-20"></i>
-        </button>
-        <!-- dishes menu -->
-        <ul class="list-unstyled nav d-flex flex-column flex-nowrap bg-white overflow-auto">
-            <li class="mobile-menu-2-close"><a class="nav-link py-3" href="menu.html">Популярное</a></li>
-            <li class="mobile-menu-2-close border-top"><a class="nav-link py-3" href="">Акции</a></li>
-            <li class="mobile-menu-2-close border-top"><a class="nav-link py-3" href="">Пицца</a></li>
-            <li class="mobile-menu-2-close border-top"><a class="nav-link py-3" href="">Роллы</a></li>
-            <li class="mobile-menu-2-close border-top"><a class="nav-link py-3" href="">Горячие закуски</a></li>
-            <li class="mobile-menu-2-close border-top"><a class="nav-link py-3" href="">Бургеры</a></li>
-            <li class="mobile-menu-2-close border-top"><a class="nav-link py-3" href="">Сеты и комбо</a></li>
-        </ul>
-    </div>
 
     <script src="js/bootstrap-5.min.js"></script>
     <script src="js/swiper.min.js"></script>
