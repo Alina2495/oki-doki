@@ -707,24 +707,12 @@ a:hover {
   display: none;
 }
 
-.bi::before {
-  color: #FF9100;
-}
-
-.bi-arrow-right::before {
-  color: inherit;
-}
-
 .desktop-scroll-header {
   display: none;
 }
 
 .mobile-search input[type=search]:focus {
   outline: none;
-}
-
-.mobile-search .bi-search::before {
-  color: #323232;
 }
 
 .mobile-menu,
@@ -738,12 +726,6 @@ a:hover {
   min-height: 80vh;
   max-height: 80vh;
   border-radius: 10px 10px 0 0;
-}
-
-.mobile-menu-2 .bi-x::before {
-  font-size: 30px;
-  color: #fff;
-  background-color: #FF9100;
 }
 
 .menu-hover {
@@ -1240,7 +1222,7 @@ button {
   }
 }
 
-@media (min-width: 1464px) {
+@media (min-width: 1494px) {
   .container,
   .container-xl {
     max-width: 1460px;

@@ -8,6 +8,10 @@
     <meta name="description" content="Онлайн-заказ пиццы и роллов в OkiDoki">
     <meta name="keywords" content="заказать еду, пицца в Казани, роллы">
     <title>Главная - «OkiDoki»</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/bootstrap-5.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <!-- open graph -->
     <meta name="og:title" content="Главная – «OkiDoki»">
     <meta property="og:image" content="images/img/logo.svg">
@@ -16,11 +20,6 @@
     <meta name="og:site_name" content="«OkiDoki» – Официальный сайт">
     <meta name="og:locale" content="ru_RU">
     <meta name="og:type" content="website">
-    <!-- styles -->
-    <link rel="stylesheet" href="css/bootstrap-5.css" />
-    <link rel="stylesheet" href="icons-main/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -47,17 +46,31 @@
                     </svg>
                 </button>
                 <!-- mobile search button -->
-                <button class="btn-trans mobile-search-btn"><i class="bi bi-search"></i></button>
+                <button class="btn-trans mobile-search-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#FF9100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 21L15.8 15.8" stroke="#FF9100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
                 <!-- mobile search button -->
-                <button class="btn-trans d-none mobile-search-close"><i class="bi bi-search"></i></button>
+                <button class="btn-trans d-none mobile-search-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#FF9100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 21L15.8 15.8" stroke="#FF9100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
                 <!-- home link logo -->
                 <a class="mx-auto" href="index.html">
                     <img src="img/images/logo.svg" alt="" height="44" width="48">
                 </a>
                 <!-- mobile login or account link -->
-                <a class="btn-trans me-2 me-sm-3" href="login.html"><i class="bi bi-box-arrow-in-right"></i></a>
+                <a class="btn-trans me-2 me-sm-3" href="login.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 4.41893L7.6 5.96555L10.2 8.83786H0V11.0473H10.2L7.6 13.9196L9 15.4662L14 9.94259L9 4.41893ZM18 17.6757H10V19.8852H18C19.1 19.8852 20 18.8909 20 17.6757V2.20946C20 0.994259 19.1 0 18 0H10V2.20946H18V17.6757Z" fill="#FF9100"/>
+                    </svg>
+                    </a>
                 <!-- mobile cart link -->
-                <a class="btn-trans" href="cart.html"><i class="bi bi-basket2-fill"></i></a>
+                <a class="btn-trans" href="cart.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.21 9.00002L12.83 2.44002C12.64 2.16002 12.32 2.02002 12 2.02002C11.68 2.02002 11.36 2.16002 11.17 2.45002L6.79 9.00002H2C1.45 9.00002 1 9.45002 1 10C1 10.09 1.01 10.18 1.04 10.27L3.58 19.54C3.81 20.38 4.58 21 5.5 21H18.5C19.42 21 20.19 20.38 20.43 19.54L22.97 10.27L23 10C23 9.45002 22.55 9.00002 22 9.00002H17.21ZM9 9.00002L12 4.60002L15 9.00002H9ZM12 17C10.9 17 10 16.1 10 15C10 13.9 10.9 13 12 13C13.1 13 14 13.9 14 15C14 16.1 13.1 17 12 17Z" fill="#FF9100"/>
+                    </svg>
+                    </a>
             </div>
             <!-- mobile main menu -->
             <div class="d-none mobile-menu bg-white d-flex flex-column position-absolute start-0 end-0 w-100 min-vh-100 overflow-auto">
@@ -71,7 +84,10 @@
             <!-- mobile search -->
             <div class="d-none mobile-search bg-white position-absolute start-0 end-0 w-100 px-2 pb-3">
                 <form action="" class="d-flex rounded-3 border px-3 py-2">
-                    <i class="bi bi-search flex-shrink-0 me-2" style="color: 323232;"></i>
+                    <svg class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#323232" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L15.8 15.8" stroke="#323232" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     <input class="border-0 flex-grow-1 mobile-search-input" type="search" name="" id="" placeholder="Поиск блюд, ингредиентов">
                 </form>
             </div>
@@ -350,7 +366,6 @@
     <!-- MAIN -->
     <main>
         <!-- BIG SLIDER -->
-        <!--  data-bs-ride="carousel" -->
         <div id="banner-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1701,12 +1716,14 @@
         </div>
     </div>
 
-
     <!-- DISHES MOBILE MENU 2 -->
     <div class="d-none mobile-menu-2 bg-orange min-vh-100 d-flex flex-column flex-nowrap justify-content-end position-fixed bottom-0 start-0 end-0 w-100">
         <!-- button close -->
         <button class="mobile-menu-2-close btn-trans ms-auto mb-auto mt-3 me-2 position-absolute top-0 end-0">
-            <i class="bi bi-x fs-20"></i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </button>
         <!-- dishes menu -->
         <ul class="list-unstyled nav d-flex flex-column flex-nowrap bg-white overflow-auto">
@@ -1721,9 +1738,9 @@
     </div>
 
     <script src="js/bootstrap-5.min.js"></script>
-    <script src="js/swiper.min.js"></script>
     <script src="js/jquery(v.3.5.1).min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

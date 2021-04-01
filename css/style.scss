@@ -680,14 +680,6 @@ a {
     }
 }
 
-.bi::before {
-    color: $orange;
-}
-
-.bi-arrow-right::before {
-    color: inherit;
-}
-
 .desktop-scroll-header {
     display: none;
 }
@@ -695,9 +687,6 @@ a {
 .mobile-search {
     input[type=search]:focus {
         outline: none;
-    }
-    .bi-search::before {
-        color: #323232;
     }
 }
 
@@ -713,11 +702,6 @@ a {
         min-height: 80vh;
         max-height: 80vh;
         border-radius: 10px 10px 0 0;
-    }
-    .bi-x::before {
-        font-size: 30px;
-        color: $white;
-        background-color: $orange;
     }
 }
 
@@ -1179,7 +1163,7 @@ button {
     }
 }
 
-@media (min-width: 1464px) {
+@media (min-width: 1494px) {
     .container,
     .container-xl {
         max-width: 1460px;

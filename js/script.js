@@ -49,7 +49,6 @@ $('.mobile-menu-2-close').on('click', () => {
     $('.mobile-menu-2').addClass('d-none');
 })
 
-
 /* sticky header */
 $(window).scroll(function() {
     var h_header = $('#header').outerHeight();
@@ -61,44 +60,11 @@ $(window).scroll(function() {
     }
 });
 
-
 $(function() {
     $(".order_mini").click(function() {
         $(".order_details").removeClass("od_show");
         $(this).next(".order_details").addClass("od_show");
     });
-});
-
-$("#banner-carousel").carousel({
-    interval: false
-});
-
-
-
-var swiper = new Swiper('.swiper-banner', {
-    slidesPerView: 1,
-    speed: 400,
-    spaceBetween: 30,
-    loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        320: {
-            spaceBetween: 10
-        },
-        480: {
-            spaceBetween: 20
-        },
-        640: {
-            spaceBetween: 30
-        }
-    },
 });
 
 var swiper = new Swiper('.promotions-swiper', {
