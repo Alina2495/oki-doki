@@ -8,10 +8,20 @@
     <meta name="description" content="Онлайн-заказ пиццы и роллов в OkiDoki">
     <meta name="keywords" content="заказать еду, пицца в Казани, роллы">
     <title>Главная - «OkiDoki»</title>
+    <!-- open graph -->
+    <meta name="og:title" content="Главная – «OkiDoki»">
+    <meta property="og:image" content="images/img/logo.svg">
+    <meta name="og:description" content="Онлайн-заказ пиццы и роллов в «OkiDoki»">
+    <meta name="og:url" content="okidoki.ru">
+    <meta name="og:site_name" content="«OkiDoki» – Официальный сайт">
+    <meta name="og:locale" content="ru_RU">
+    <meta name="og:type" content="website">
+    <!-- styles -->
     <link rel="stylesheet" href="css/bootstrap-5.css" />
     <link rel="stylesheet" href="icons-main/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -82,9 +92,9 @@
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#FF9100"/>
                 </svg>Казань, ул. Улица</span>
                 <!-- search -->
-                <form class="mx-3 mb-2 my-3 my-lg-0 m-lg-0 search-form d-flex justify-content-between" action="/search.php">
-                    <input required="" type="search" placeholder="Поиск по сайту..." aria-label="Search" class="search-input" name="search">
-                    <button type="submit" class="search-btn bttn">Найти</button>
+                <form class="mx-3 mb-2 my-3 my-lg-0 m-lg-0 search-form rounded-pill d-flex justify-content-between fs-6" action="/search.php">
+                    <input required="" type="search" placeholder="Поиск по сайту..." aria-label="Search" class="search-input rounded-pill border-0 flex-grow-1" name="search">
+                    <button type="submit" class="rounded-pill search-btn bttn">Найти</button>
                 </form>
                 <!-- work hours -->
                 <span class="d-none d-xl-block"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -403,7 +413,7 @@
                             <path d="M13.75 9.84375C9.87305 9.84375 6.71875 12.998 6.71875 16.875C6.71875 20.752 9.87305 23.9062 13.75 23.9062C17.627 23.9062 20.7812 20.752 20.7812 16.875C20.7812 12.998 17.627 9.84375 13.75 9.84375ZM13.75 22.3438C10.7346 22.3438 8.28125 19.8904 8.28125 16.875C8.28125 13.8596 10.7346 11.4062 13.75 11.4062C16.7654 11.4062 19.2188 13.8596 19.2188 16.875C19.2188 19.8904 16.7654 22.3438 13.75 22.3438Z" fill="#FF9100"/>
                             <path d="M16.875 16.0938H14.5312V13.75C14.5312 13.3185 14.1815 12.9688 13.75 12.9688C13.3185 12.9688 12.9688 13.3185 12.9688 13.75V16.875C12.9688 17.3065 13.3185 17.6562 13.75 17.6562H16.875C17.3065 17.6562 17.6562 17.3065 17.6562 16.875C17.6562 16.4435 17.3065 16.0938 16.875 16.0938Z" fill="#FF9100"/>
                         </svg>
-                        <h6 class="mt-3">Бесплатная доставка</h6>
+                        <h5 class="mt-3">Бесплатная доставка</h5>
                         <p>Минимальная сумма заказа 600 ₽</p>
                     </div>
                     <div>
@@ -419,7 +429,7 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <h6 class="mt-3">Время доставки</h6>
+                        <h5 class="mt-3">Время доставки</h5>
                         <p>Доставим в пределах города Казани за 60 минут</p>
                     </div>
                     <div>
@@ -434,8 +444,8 @@
                             <rect width="40" height="40" fill="white"/>
                             </clipPath>
                             </defs>
-                            </svg>
-                        <h6 class="mt-3">Удобная оплата</h6>
+                        </svg>
+                        <h5 class="mt-3">Удобная оплата</h5>
                         <p>Принимаем к оплате наличные и банковские карты</p>
                     </div>
                     <div>
@@ -446,7 +456,7 @@
                             <path d="M22.8477 12.1577H25.1914V14.5015H22.8477V12.1577Z" fill="#FF9100"/>
                             <path d="M40 16.3948C40 10.5792 35.2687 5.8479 29.4531 5.8479H10.5469C4.73133 5.8479 0 10.5792 0 16.3948V19.1889H2.51359C1.99812 19.9863 1.69758 20.935 1.69758 21.9531C1.69758 22.9713 1.9982 23.9199 2.51359 24.7174H0V28.2928C0 31.5237 2.62852 34.1522 5.85938 34.1522H34.1406C37.3715 34.1522 40 31.5237 40 28.2928V24.7174H37.4864C38.0018 23.9199 38.3024 22.9713 38.3024 21.9531C38.3024 20.935 38.0018 19.9863 37.4864 19.1888H40V16.3948ZM4.04133 21.9531C4.04133 20.562 5.07461 19.408 6.41391 19.2171L11.9142 24.7174H6.80562C5.28141 24.7174 4.04133 23.4774 4.04133 21.9531ZM9.70008 19.1888H19.7864L14.7433 24.232L9.70008 19.1888ZM37.6562 28.2927C37.6562 30.2313 36.0791 31.8084 34.1406 31.8084H5.85938C3.92086 31.8084 2.34375 30.2313 2.34375 28.2927V27.0611H37.6562V28.2927ZM35.9587 21.9531C35.9587 23.4774 34.7186 24.7174 33.1944 24.7174H17.5724L23.1009 19.1888H33.1945C34.7186 19.1888 35.9587 20.4289 35.9587 21.9531ZM37.6562 16.8451H2.34375V16.3947C2.34375 11.8715 6.02367 8.19157 10.5469 8.19157H29.4531C33.9763 8.19157 37.6562 11.8715 37.6562 16.3947V16.8451Z" fill="#FF9100"/>
                         </svg>
-                        <h6 class="mt-3">Собственная рецептура</h6>
+                        <h5 class="mt-3">Собственная рецептура</h5>
                         <p>Демократичные цены и широкий выбор блюд</p>
                     </div>
                 </div>
@@ -489,8 +499,8 @@
             </nav>
             <div class="tab-content container" id="dishes-tabContent">
                 <!-- popular -->
-                <div class="tab-pane fade mt-5 show active" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
-                    <div class="row row-cols-auto row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gx-2 gx-lg-3 gx-xxl-4 gy-3 flex-nowrap flex-sm-wrap">
+                <div class="tab-pane fade mt-5 show active h-scroll" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
+                    <div class="row row-cols-auto row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gx-2 gx-lg-3 gx-xxl-4 gy-3 gy-xl-4 flex-nowrap flex-sm-wrap">
                         <!-- card new -->
                         <div>
                             <div class="card h-100 pb-4 border-0">
@@ -1196,9 +1206,9 @@
                     </div>
                 </div>
                 <!-- promo -->
-                <div class="tab-pane fade mt-5" id="nav-promo" role="tabpanel" aria-labelledby="nav-promo-tab">Акции</div>
+                <div class="tab-pane fade mt-5 h-scroll" id="nav-promo" role="tabpanel" aria-labelledby="nav-promo-tab">Акции</div>
                 <!-- pizza -->
-                <div class="tab-pane fade pt-3" id="nav-pizza" role="tabpanel" aria-labelledby="nav-pizza-tab">
+                <div class="tab-pane fade pt-3 h-scroll" id="nav-pizza" role="tabpanel" aria-labelledby="nav-pizza-tab">
                     <div class="nav nav-tabs border-0 d-flex d-md-inline-flex flex-nowrap text-nowrap" id="pizza-tab" role="tablist">
                         <!-- сеты -->
                         <button class="nav-link2 active" id="nav-pizza-1-tab" data-bs-toggle="tab" data-bs-target="#nav-pizza-1" type="button" role="tab" aria-controls="nav-pizza-1" aria-selected="true">Пицца</button>
@@ -1269,7 +1279,7 @@
                             </div>
                         </div>
                         <!-- пицца 2 -->
-                        <div class="tab-pane fade" id="nav-pizza-2" role="tabpanel" aria-labelledby="nav-pizza-2-tab">
+                        <div class="tab-pane fade h-scroll" id="nav-pizza-2" role="tabpanel" aria-labelledby="nav-pizza-2-tab">
                             <div class="row row-cols-auto row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gx-2 gx-lg-3 gx-xxl-4 gy-5 flex-nowrap flex-sm-wrap">
                                 <!-- card new -->
                                 <div>
@@ -1333,7 +1343,7 @@
                     </div>
                 </div>
                 <!-- rolls -->
-                <div class="tab-pane pt-3 fade" id="nav-rolls" role="tabpanel" aria-labelledby="nav-rolls-tab">
+                <div class="tab-pane pt-3 fade h-scroll" id="nav-rolls" role="tabpanel" aria-labelledby="nav-rolls-tab">
                     <div class="nav nav-tabs border-0 mb-4 d-flex d-md-inline-flex flex-nowrap text-nowrap" id="nav-tab" role="tablist">
                         <!-- горячие -->
                         <button class="nav-link2 active" id="nav-hot-rolls-tab" data-bs-toggle="tab" data-bs-target="#nav-hot-rolls" type="button" role="tab" aria-controls="nav-hot-rolls" aria-selected="true">Горячие</button>
@@ -1369,11 +1379,11 @@
             </div>
             <div class="container position-relative my-5 d-flex align-items-end justify-content-end">
                 <button class="position-absolute fs-20 top-50 start-50 translate-middle btn-orange">Посмотреть ещё</button>
-                <a href="menu.html" class="text-muted fs-20 fw-5 d-none d-md-block">Перейти в каталог<svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="menu.html" class="text-muted fs-20 fw-5 d-none d-md-block">Перейти в каталог<svg class="ms-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12H19" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12 5L19 12L12 19" stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    </a>
+                </a>
             </div>
         </section>
 
@@ -1385,7 +1395,7 @@
                 </div>
                 <div class="col-lg-6 py-4">
                     <div class="m-auto col-11 col-sm-10 col-lg-11 col-xxl-10">
-                        <h2 class="mb-3">У вас есть вопросы или пожелания?</h2>
+                        <h2 class="mb-2">У вас есть вопросы или пожелания?</h2>
                         <p class="mb-3">У вас есть вопросы о процессе приготовления, ингредиентах или хотите оставить свои пожелания? Напишите нам и мы ответим на них!</p>
                         <a href="mailto:mail@yandex.ru" class="mt-2 btn-orange py-3 px-4 px-lg-5">Напишите нам</a>
                     </div>
@@ -1543,7 +1553,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <button name="review-modal" type="button" class="d-flex mx-auto text-center btn-orange py-3 px-5 mt-md-2 mt-lg-3" data-bs-toggle="modal" data-bs-target="#AddCommentModal">Оставить отзыв</button>
+                        <button name="review-modal" type="button" class="d-flex mx-auto text-center btn-orange py-3 px-5 mt-md-2 mt-lg-5" data-bs-toggle="modal" data-bs-target="#AddCommentModal">Оставить отзыв</button>
                     </div>
                 </div>
             </div>
@@ -1564,7 +1574,7 @@
                         <h6 class="mb-3 fw-bolder">Адрес:</h6>
                         <p class="mb-4">г. Казань, ул. Профсоюзная</p>
                         <h6 class="mb-3 fw-bolder">Вопросы и предложения:</h6>
-                        <p class="mb-0"><a href="mailto:mail@yandex.ru">mail@yandex.ru</a></p>
+                        <p class="mb-4 mb-lg-0"><a href="mailto:mail@yandex.ru">mail@yandex.ru</a></p>
                     </div>
                     <div class="col-lg-7 map">
                         <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9fb482a74d255d722e01314f6d53db11f7420412c89abe56a2f0db0b337ef36e&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>

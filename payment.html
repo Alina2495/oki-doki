@@ -53,8 +53,7 @@
             <div class="d-none mobile-menu bg-white d-flex flex-column position-absolute start-0 end-0 w-100 min-vh-100 overflow-auto">
                 <ul class="list-unstyled nav d-flex flex-column fw-5 max-vh-100">
                     <li class="border-top"><a class="nav-link py-3" href="menu.html">Меню</a></li>
-                    <!-- <li class="border-top"><a class="nav-link py-3" href="about.html">О нас</a></li> -->
-                    <li class="border-top"><a class="nav-link py-3" href="delivery.html">Доставка и оплата</a></li>
+                    <li class="border-top"><a class="nav-link py-3" href="payment.html">Доставка и оплата</a></li>
                     <li class="border-top"><a class="nav-link py-3" href="promotions.html">Акции</a></li>
                     <li class="border-top border-bottom"><a class="nav-link py-3" href="comments.html">Отзывы</a></li>
                 </ul>
@@ -74,40 +73,50 @@
         <div class="container position-relative pt-2">
             <!-- top nav -->
             <div class="d-flex justify-content-between align-items-center text-nowrap">
+                <!-- logo -->
                 <a href="index.html">
                     <img src="img/images/logo.svg" alt="">
                 </a>
+                <!-- address -->
                 <span class="d-none d-xxl-block"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#FF9100"/>
-                    </svg>Казань, ул. Улица</span>
-                <form class="mx-3 mb-2 my-3 my-lg-0 m-lg-0 search-form d-flex justify-content-between" action="/search.php">
-                    <input required="" type="search" placeholder="Поиск по сайту..." aria-label="Search" class="search-input" name="search">
-                    <button type="submit" class="search-btn bttn">Найти</button>
+                </svg>Казань, ул. Улица</span>
+                <!-- search -->
+                <form class="mx-3 mb-2 my-3 my-lg-0 m-lg-0 search-form rounded-pill d-flex justify-content-between fs-6" action="/search.php">
+                    <input required="" type="search" placeholder="Поиск по сайту..." aria-label="Search" class="search-input rounded-pill border-0 flex-grow-1" name="search">
+                    <button type="submit" class="rounded-pill search-btn bttn">Найти</button>
                 </form>
+                <!-- work hours -->
                 <span class="d-none d-xl-block"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#FF9100"/>
                     <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#FF9100"/>
                     </svg>
                     Ежедневно с 10:00 до 23:00</span>
+                <!-- telephone -->
                 <a href="tel:+7(123)456-78-90"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="#FF9100"/>
                     </svg>
-                    +7 (123) 456-78-90</a>
+                +7 (123) 456-78-90</a>
             </div>
             <!-- bottom nav -->
             <div class="d-flex justify-content-between align-items-center position-relative">
-                <a class="py-3 menu-hover-link" href=""><svg class="me-1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- menu -->
+                <a class="py-3 menu-hover-link" href="menu.html"><svg class="me-1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 15.1167H20V13.1167H4V15.1167ZM4 19.1167H20V17.1167H4V19.1167ZM4 11.1167H20V9.1167H4V11.1167ZM4 5.1167V7.1167H20V5.1167H4Z" fill="#FF9100"/>
                     </svg>
                     Меню</a>
-                <!-- <a class="py-3" href="about.html">О нас</a> -->
-                <a class="py-3" href="delivery.html">Доставка и оплата</a>
+                <!-- delivery and payment -->
+                <a class="py-3" href="payment.html">Доставка и оплата</a>
+                <!-- promotions -->
                 <a class="py-3" href="promotions.html">Акции</a>
+                <!-- comments -->
                 <a class="py-3" href="comments.html">Отзывы</a>
+                <!-- login or profile -->
                 <a class="py-3" href="login.html">Личный кабинет<svg class="ms-1" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 4.53563L7.6 6.08225L10.2 8.95455H0V11.164H10.2L7.6 14.0363L9 15.5829L14 10.0593L9 4.53563ZM18 17.7924H10V20.0019H18C19.1 20.0019 20 19.0076 20 17.7924V2.32616C20 1.11096 19.1 0.116699 18 0.116699H10V2.32616H18V17.7924Z" fill="#FF9100"/>
                     </svg>
                 </a>
+                <!-- cart -->
                 <a class="p-3 hover-cart" href="cart.html">
                     <svg class="me-1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.21 9.11672L12.83 2.55672C12.64 2.27672 12.32 2.13672 12 2.13672C11.68 2.13672 11.36 2.27672 11.17 2.56672L6.79 9.11672H2C1.45 9.11672 1 9.56672 1 10.1167C1 10.2067 1.01 10.2967 1.04 10.3867L3.58 19.6567C3.81 20.4967 4.58 21.1167 5.5 21.1167H18.5C19.42 21.1167 20.19 20.4967 20.43 19.6567L22.97 10.3867L23 10.1167C23 9.56672 22.55 9.11672 22 9.11672H17.21ZM9 9.11672L12 4.71672L15 9.11672H9ZM12 17.1167C10.9 17.1167 10 16.2167 10 15.1167C10 14.0167 10.9 13.1167 12 13.1167C13.1 13.1167 14 14.0167 14 15.1167C14 16.2167 13.1 17.1167 12 17.1167Z" fill="#FF9100"/>
@@ -127,7 +136,7 @@
                                 <div class="flex-grow-1">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-start">
-                                            <div class="fw-6 mb-1 col-10"><a href="card.html">Сет «Америка», 48 шт.</a></div>
+                                            <div class="fw-6 mb-1 col-10">Сет «Америка», 48 шт.</div>
                                             <button type="button" class="btn-trans ms-auto flex-shrink-0">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.36251 18.9368C6.36251 19.991 7.22501 20.8535 8.27918 20.8535H15.9458C17 20.8535 17.8625 19.991 17.8625 18.9368V7.43685H6.36251V18.9368ZM18.8208 4.56185H15.4667L14.5083 3.60352H9.71668L8.75834 4.56185H5.40417V6.47852H18.8208V4.56185Z" fill="#323232"/>
@@ -166,7 +175,7 @@
                                 <div class="flex-grow-1">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-start">
-                                            <div class="fw-6 mb-1 col-10"><a href="card.html">Пицца «Неаполь», 25 см Пицца «Неаполь», 25 см</a></div>
+                                            <div class="fw-6 mb-1 col-10">Пицца «Неаполь», 25 см Пицца «Неаполь», 25 см</div>
                                             <button type="button" class="btn-trans ms-auto flex-shrink-0">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.36251 18.9368C6.36251 19.991 7.22501 20.8535 8.27918 20.8535H15.9458C17 20.8535 17.8625 19.991 17.8625 18.9368V7.43685H6.36251V18.9368ZM18.8208 4.56185H15.4667L14.5083 3.60352H9.71668L8.75834 4.56185H5.40417V6.47852H18.8208V4.56185Z" fill="#323232"/>
@@ -301,24 +310,28 @@
     <header class="desktop-scroll-header fw-5 fs-20 position-fixed top-0 start-0 end-0 bg-white">
         <div class="container d-none d-lg-flex justify-content-between align-items-center py-4">
             <div class="row justify-content-between w-100 text-nowrap">
-                <div class="col-6 d-flex me-auto justify-content-between">
-                    <!-- <a href="about.html">О нас</a> -->
-                    <a href="delivery.html">Доставка и оплата</a>
+                <div class="d-flex align-items-center justify-content-between">
+                    <!-- delivery and payment -->
+                    <a href="payment.html">Доставка и оплата</a>
+                    <!-- promotions -->
                     <a href="promotions.html">Акции</a>
+                    <!-- comments -->
                     <a href="comments.html">Отзывы</a>
-                </div>
-                <div class="col-5 col-xl-6 d-flex justify-content-between">
-                    <a href="login.html">Личный кабинет<svg class="ms-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- login or profile -->
+                    <a href="login.html" class="me-3">Личный кабинет<svg class="ms-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 4.41893L7.6 5.96555L10.2 8.83786H0V11.0473H10.2L7.6 13.9196L9 15.4662L14 9.94259L9 4.41893ZM18 17.6757H10V19.8852H18C19.1 19.8852 20 18.8909 20 17.6757V2.20946C20 0.994259 19.1 0 18 0H10V2.20946H18V17.6757Z" fill="#FF9100"/>
                         </svg>
-                        </a>
+                    </a>
+                    <!-- telephone -->
                     <a class="d-none d-xl-block" href="tel:+7(123)456-78-90"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="#FF9100"/>
-                        </svg>+7 (123) 456-78-90</a>
-                    <a href="cart.html"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </svg>+7 (123) 456-78-90</a>
+                    <!-- cart -->
+                    <a class="ms-3" href="cart.html"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.21 9.11672L12.83 2.55672C12.64 2.27672 12.32 2.13672 12 2.13672C11.68 2.13672 11.36 2.27672 11.17 2.56672L6.79 9.11672H2C1.45 9.11672 1 9.56672 1 10.1167C1 10.2067 1.01 10.2967 1.04 10.3867L3.58 19.6567C3.81 20.4967 4.58 21.1167 5.5 21.1167H18.5C19.42 21.1167 20.19 20.4967 20.43 19.6567L22.97 10.3867L23 10.1167C23 9.56672 22.55 9.11672 22 9.11672H17.21ZM9 9.11672L12 4.71672L15 9.11672H9ZM12 17.1167C10.9 17.1167 10 16.2167 10 15.1167C10 14.0167 10.9 13.1167 12 13.1167C13.1 13.1167 14 14.0167 14 15.1167C14 16.2167 13.1 17.1167 12 17.1167Z" fill="#FF9100"/>
                         </svg>
-                        Корзина (0)</a>
+                        Корзина (0)
+                    </a>
                 </div>
             </div>
         </div>

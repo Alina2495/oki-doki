@@ -82,9 +82,9 @@
                     <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#FF9100"/>
                 </svg>Казань, ул. Улица</span>
                 <!-- search -->
-                <form class="mx-3 mb-2 my-3 my-lg-0 m-lg-0 search-form d-flex justify-content-between" action="/search.php">
-                    <input required="" type="search" placeholder="Поиск по сайту..." aria-label="Search" class="search-input" name="search">
-                    <button type="submit" class="search-btn bttn">Найти</button>
+                <form class="mx-3 mb-2 my-3 my-lg-0 m-lg-0 search-form rounded-pill d-flex justify-content-between fs-6" action="/search.php">
+                    <input required="" type="search" placeholder="Поиск по сайту..." aria-label="Search" class="search-input rounded-pill border-0 flex-grow-1" name="search">
+                    <button type="submit" class="rounded-pill search-btn bttn">Найти</button>
                 </form>
                 <!-- work hours -->
                 <span class="d-none d-xl-block"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +136,7 @@
                                 <div class="flex-grow-1">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-start">
-                                            <div class="fw-6 mb-1 col-10"><a href="card.html">Сет «Америка», 48 шт.</a></div>
+                                            <div class="fw-6 mb-1 col-10">Сет «Америка», 48 шт.</div>
                                             <button type="button" class="btn-trans ms-auto flex-shrink-0">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.36251 18.9368C6.36251 19.991 7.22501 20.8535 8.27918 20.8535H15.9458C17 20.8535 17.8625 19.991 17.8625 18.9368V7.43685H6.36251V18.9368ZM18.8208 4.56185H15.4667L14.5083 3.60352H9.71668L8.75834 4.56185H5.40417V6.47852H18.8208V4.56185Z" fill="#323232"/>
@@ -175,7 +175,7 @@
                                 <div class="flex-grow-1">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-start">
-                                            <div class="fw-6 mb-1 col-10"><a href="card.html">Пицца «Неаполь», 25 см Пицца «Неаполь», 25 см</a></div>
+                                            <div class="fw-6 mb-1 col-10">Пицца «Неаполь», 25 см Пицца «Неаполь», 25 см</div>
                                             <button type="button" class="btn-trans ms-auto flex-shrink-0">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.36251 18.9368C6.36251 19.991 7.22501 20.8535 8.27918 20.8535H15.9458C17 20.8535 17.8625 19.991 17.8625 18.9368V7.43685H6.36251V18.9368ZM18.8208 4.56185H15.4667L14.5083 3.60352H9.71668L8.75834 4.56185H5.40417V6.47852H18.8208V4.56185Z" fill="#323232"/>
@@ -346,11 +346,13 @@
                 <div class="col-lg-3">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <!-- profile tab -->
-                        <button class="v-tab active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Профиль</button>
+                        <button class="v-tab active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">Профиль</button>
                         <!-- orders history -->
-                        <button class="v-tab" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">История заказов</button>
+                        <button class="v-tab" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false">История заказов</button>
                         <!-- delivery history -->
-                        <button class="v-tab" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Адреса доставки</button>
+                        <button class="v-tab" id="v-pills-delivery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-delivery" type="button" role="tab" aria-controls="v-pills-delivery" aria-selected="false">Адреса доставки</button>
+                        <!-- favorites -->
+                        <button class="v-tab" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav" type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">Избранное</button>
                         <!-- logout -->
                         <a class="v-tab" href="login.html">Выйти</a>
                     </div>
@@ -359,7 +361,7 @@
                 <div class="col-lg-9 mt-4 mt-lg-0">
                     <div class="tab-content border" id="v-pills-tabContent">
                         <!-- profile tab -->
-                        <div class="tab-pane fade show active profile-tab-content" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="tab-pane fade show active profile-tab-content" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                             <h3 class="mb-3">Персональная информация</h3>
                             <dl class="d-flex flex-wrap">
                                 <dt class="text-muted">Имя:</dt>
@@ -384,7 +386,7 @@
                             </div>
                         </div>
                         <!-- profile orders -->
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
                             <div class="table-responsive">
                                 <table class="table orders_table mb-0">
                                     <thead>
@@ -398,20 +400,20 @@
                                     <tbody class="accordion" id="accordionExample">
                                         <tr class="order_mini">
                                             <td>
-                                                <div class="fw_6">№ 123456789</div>
+                                                <div class="fw-6">№ 123456789</div>
                                             </td>
                                             <td>
-                                                <div class="fw_6">1250 руб</div>
+                                                <div class="fw-6">1250 руб</div>
                                             </td>
                                             <td>
                                                 <div>Готов</div>
                                             </td>
                                             <td>
                                                 <div class="dropdown">
-                                                    <button type="button" class=" dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
+                                                    <button type="button" class="dropdown-toggle btn-white fw-6 ms-auto me-0 d-block" data-bs-toggle="dropdown" aria-expanded="false">Повторить заказ</button>
                                                     <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
+                                                        <button class="dropdown-item btn-white fw-6 mb-3" type="button">Доставка</button>
+                                                        <button class="dropdown-item btn-white fw-6" type="button">Самовывоз</button>
                                                     </div>
                                                 </div>
                                             </td>
@@ -422,164 +424,15 @@
                                                 <div>Пицца Мясная</div>
                                             </td>
                                             <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
+                                                <div class="fw-6 mb-3">Адрес заказа:</div>
                                                 <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
                                             </td>
                                             <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
+                                                <div class="fw-6 mb-3">Комментарий:</div>
                                                 <div>Пицца Мясная приготовить без лука</div>
                                             </td>
                                             <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_mini">
-                                            <td>
-                                                <div class="fw_6">№ 123456789</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">1250 руб</div>
-                                            </td>
-                                            <td>
-                                                <div>Готов</div>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button" class="dropdown-toggle btn-simple f_08 fw_6 ml-auto mr-0 d-block" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Повторить заказ</button>
-                                                    <div class="dropdown-menu dropdown-menu-right py-3 px-4">
-                                                        <button class="dropdown-item btn-simple f_08 fw_6 mb-3" type="button">Доставка</button>
-                                                        <button class="dropdown-item btn-simple f_08 fw_6" type="button">Самовывоз</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="order_details">
-                                            <td>
-                                                <div class="mb-3">Пицца Маргарита</div>
-                                                <div>Пицца Мясная</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Адрес заказа:</div>
-                                                <div>Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6 mb-3">Комментарий:</div>
-                                                <div>Пицца Мясная приготовить без лука</div>
-                                            </td>
-                                            <td>
-                                                <div class="fw_6">Доставка</div>
+                                                <div class="fw-6">Доставка</div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -587,7 +440,7 @@
                             </div>
                         </div>
                         <!-- profile delivery -->
-                        <div class="tab-pane fade delivery-tab-content" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="tab-pane fade delivery-tab-content" id="v-pills-delivery" role="tabpanel" aria-labelledby="v-pills-delivery-tab">
                             <div class="delivery-top">
                                 <h3 class="mb-3">Адреса доставки</h3>
                                 <button type="button" class="flex-grow-1 btn-white" data-bs-toggle="modal" data-bs-target="#addNewAddressModal">
@@ -664,8 +517,260 @@
                             </div>
 
                         </div>
+                        <!-- favorites -->
+                        <div class="tab-pane fade" id="v-pills-fav" role="tabpanel" aria-labelledby="v-pills-fav-tab">
+                            <!-- empty favorites -->
+                            <div class="p-3 p-sm-4 p-lg-5">
+                                <h1>Список избранного пуст</h1>
+                                <p>Добавьте блюда из нашего меню в избранное, которые вас заинтересовали</p>
+                                <p class="mb-4">Чтобы сохранить список необходимо <a class="c-orange" href="login.html">войти в аккаунт</a> или <a class="c-orange" href="register.html">зарегистрироваться.</a></p>
+                                <a href="menu.html" class="btn-orange">Смотреть меню</a>
+                            </div>
+
+
+                            <div class="p-3 p-sm-4 p-lg-5">
+                                <h3 class="mb-4">Избранное</h3>
+                                <div class="row row-cols-auto row-cols-sm-2 row-cols-xl-3 gx-2 gx-lg-3 gx-xxl-4 gy-3  flex-sm-wrap">
+                                    <!-- card new -->
+                                    <div>
+                                        <div class="card h-100 pb-4 border-0">
+                                            <div class="img-wrapper position-relative overflow-hidden mb-3">
+                                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product.jpg" alt="Сет «Америка»">
+                                            </div>
+                                            <div class="badge position-absolute">10%</div>
+                                            <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
+                                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.22318 16.2905L9.22174 16.2892C6.62662 13.936 4.55384 12.0538 3.1178 10.2981C1.69324 8.55647 1 7.06152 1 5.5C1 2.97228 2.97228 1 5.5 1C6.93721 1 8.33224 1.67394 9.23865 2.73834L10 3.6324L10.7614 2.73834C11.6678 1.67394 13.0628 1 14.5 1C17.0277 1 19 2.97228 19 5.5C19 7.06153 18.3068 8.55653 16.882 10.2996C15.4459 12.0566 13.3734 13.9409 10.7786 16.2989C10.7782 16.2993 10.7778 16.2996 10.7775 16.2999L10.0026 17L9.22318 16.2905Z" stroke="#FF4343" stroke-width="2"/>
+                                                    </svg>  
+                                                </button>
+                                            <div class="d-flex flex-row">
+                                                <div class="w-75">
+                                                    <div class="title mb-2 fw-5">Пицца Жареный Цезарь</div>
+                                                    <div class="desc">
+                                                        <p>Состав: Курица, помидор, пекинская капуста, соус цезарь, соус унаги, кляр, сухари, рис, нори, кунжут.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end w-25">
+                                                    <ins class="text-decoration-none mb-2 fw-bold">1 370<span> ₽</span></ins>
+                                                    <del>1 519<span> ₽</span></del>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group d-block mt-auto mb-3" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+                                                <label class="btn" for="btnradio1">25 см</label>
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+                                                <label class="btn" for="btnradio2">32 см</label>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div class="weight fw-5">1500 г</div>
+                                                <div class="cart-btn-wrapper rounded-pill overflow-hidden">
+                                                    <div class="cart-btn rounded-pill p-0 overflow-hidden">
+                                                        <div class="quantity-block h-100 w-100 d-flex justify-content-between align-items-center">
+
+                                                            <button class="count-btn rounded-circle bg-white">
+                                                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14 2H0V0H14V2Z" fill="#333333"/>
+                                                                </svg>  
+                                                            </button>
+                                                            <label for="card-input" class="fs-0"></label>
+                                                            <input class="bg-transparent border-0 h-100 flex-grow-1" type="number" value="1" id="card-input">
+                                                            <button class="count-btn rounded-circle bg-white">
+                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#333333"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <button name="add-to-cart" onclick="$(this).prev('.quantity-block').css('margin-top', '0px');" class="cart-btn-inner w-100 h-100 border-0 rounded-pill ps-3 pe-0 p-0 d-flex align-items-center justify-content-between">
+                                                            <span class="pe-2">В корзину</span>
+                                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" stroke="#FF9100"/>
+                                                                <path d="M27.2 27.2C27.2 28.199 26.399 29 25.4 29C24.9226 29 24.4648 28.8104 24.1272 28.4728C23.7896 28.1352 23.6 27.6774 23.6 27.2C23.6 26.201 24.401 25.4 25.4 25.4C25.8774 25.4 26.3352 25.5896 26.6728 25.9272C27.0104 26.2648 27.2 26.7226 27.2 27.2ZM16.4 25.4C15.401 25.4 14.6 26.201 14.6 27.2C14.6 27.6774 14.7896 28.1352 15.1272 28.4728C15.4648 28.8104 15.9226 29 16.4 29C17.399 29 18.2 28.199 18.2 27.2C18.2 26.201 17.399 25.4 16.4 25.4ZM16.58 22.367L16.553 22.475C16.553 22.601 16.652 22.7 16.778 22.7H27.2V24.5H16.4C15.9226 24.5 15.4648 24.3104 15.1272 23.9728C14.7896 23.6352 14.6 23.1774 14.6 22.7C14.6 22.385 14.681 22.088 14.816 21.836L16.04 19.631L12.8 12.8H11V11H13.943L14.789 12.8H28.1C28.595 12.8 29 13.205 29 13.7C29 13.853 28.955 14.006 28.892 14.15L25.67 19.973C25.364 20.522 24.77 20.9 24.095 20.9H17.39L16.58 22.367ZM17.75 19.1H19.1V17.3H16.904L17.75 19.1ZM20 17.3V19.1H22.7V17.3H20ZM22.7 16.4V14.6H20V16.4H22.7ZM25.499 17.3H23.6V19.1H24.5L25.499 17.3ZM27.002 14.6H23.6V16.4H26.003L27.002 14.6ZM15.626 14.6L16.472 16.4H19.1V14.6H15.626Z" fill="#FF9100"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="visually-hidden position-static stretched-link" data-bs-toggle="modal" data-bs-target="#ProductCardModal">
+                                                  </button>
+                                        </div>
+                                    </div>
+                                    <!-- card new -->
+                                    <div>
+                                        <div class="card h-100 pb-4 border-0">
+                                            <div class="img-wrapper position-relative overflow-hidden mb-3">
+                                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product-2.jpg" alt="Сет «Америка»">
+                                            </div>
+                                            <div class="badge position-absolute">10%</div>
+                                            <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
+                                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.22318 16.2905L9.22174 16.2892C6.62662 13.936 4.55384 12.0538 3.1178 10.2981C1.69324 8.55647 1 7.06152 1 5.5C1 2.97228 2.97228 1 5.5 1C6.93721 1 8.33224 1.67394 9.23865 2.73834L10 3.6324L10.7614 2.73834C11.6678 1.67394 13.0628 1 14.5 1C17.0277 1 19 2.97228 19 5.5C19 7.06153 18.3068 8.55653 16.882 10.2996C15.4459 12.0566 13.3734 13.9409 10.7786 16.2989C10.7782 16.2993 10.7778 16.2996 10.7775 16.2999L10.0026 17L9.22318 16.2905Z" stroke="#FF4343" stroke-width="2"/>
+                                                    </svg>  
+                                                </button>
+                                            <div class="d-flex flex-row">
+                                                <div class="w-75">
+                                                    <div class="title mb-2 fw-5">Ролл Жареный с лососем</div>
+                                                    <div class="desc">
+                                                        <p>Состав: Лосось, сыр сливочный, огурец, кляр, соус унаги, кунжут, нори, рис.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end w-25">
+                                                    <ins class="text-decoration-none mb-2 fw-bold">1 370<span> ₽</span></ins>
+                                                    <del>1 519<span> ₽</span></del>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div class="weight fw-5">1500 г</div>
+                                                <div class="cart-btn-wrapper rounded-pill overflow-hidden">
+                                                    <div class="cart-btn rounded-pill p-0 overflow-hidden">
+                                                        <div class="quantity-block h-100 w-100 d-flex justify-content-between align-items-center">
+
+                                                            <button class="count-btn rounded-circle bg-white">
+                                                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14 2H0V0H14V2Z" fill="#333333"/>
+                                                                </svg>  
+                                                            </button>
+                                                            <label for="card-input" class="fs-0"></label>
+                                                            <input class="bg-transparent border-0 h-100 flex-grow-1" type="number" value="1" id="card-input">
+                                                            <button class="count-btn rounded-circle bg-white">
+                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#333333"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <button name="add-to-cart" onclick="$(this).prev('.quantity-block').css('margin-top', '0px');" class="cart-btn-inner w-100 h-100 border-0 rounded-pill ps-3 pe-0 p-0 d-flex align-items-center justify-content-between">
+                                                            <span class="pe-2">В корзину</span>
+                                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" stroke="#FF9100"/>
+                                                                <path d="M27.2 27.2C27.2 28.199 26.399 29 25.4 29C24.9226 29 24.4648 28.8104 24.1272 28.4728C23.7896 28.1352 23.6 27.6774 23.6 27.2C23.6 26.201 24.401 25.4 25.4 25.4C25.8774 25.4 26.3352 25.5896 26.6728 25.9272C27.0104 26.2648 27.2 26.7226 27.2 27.2ZM16.4 25.4C15.401 25.4 14.6 26.201 14.6 27.2C14.6 27.6774 14.7896 28.1352 15.1272 28.4728C15.4648 28.8104 15.9226 29 16.4 29C17.399 29 18.2 28.199 18.2 27.2C18.2 26.201 17.399 25.4 16.4 25.4ZM16.58 22.367L16.553 22.475C16.553 22.601 16.652 22.7 16.778 22.7H27.2V24.5H16.4C15.9226 24.5 15.4648 24.3104 15.1272 23.9728C14.7896 23.6352 14.6 23.1774 14.6 22.7C14.6 22.385 14.681 22.088 14.816 21.836L16.04 19.631L12.8 12.8H11V11H13.943L14.789 12.8H28.1C28.595 12.8 29 13.205 29 13.7C29 13.853 28.955 14.006 28.892 14.15L25.67 19.973C25.364 20.522 24.77 20.9 24.095 20.9H17.39L16.58 22.367ZM17.75 19.1H19.1V17.3H16.904L17.75 19.1ZM20 17.3V19.1H22.7V17.3H20ZM22.7 16.4V14.6H20V16.4H22.7ZM25.499 17.3H23.6V19.1H24.5L25.499 17.3ZM27.002 14.6H23.6V16.4H26.003L27.002 14.6ZM15.626 14.6L16.472 16.4H19.1V14.6H15.626Z" fill="#FF9100"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="visually-hidden position-static stretched-link" data-bs-toggle="modal" data-bs-target="#ProductCardModal">
+                                                  </button>
+                                        </div>
+                                    </div>
+                                    <!-- card new -->
+                                    <div>
+                                        <div class="card h-100 pb-4 border-0">
+                                            <div class="img-wrapper position-relative overflow-hidden mb-3">
+                                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product-3.jpg" alt="Сет «Америка»">
+                                            </div>
+                                            <div class="badge position-absolute">10%</div>
+                                            <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.22318 16.2905L9.22174 16.2892C6.62662 13.936 4.55384 12.0538 3.1178 10.2981C1.69324 8.55647 1 7.06152 1 5.5C1 2.97228 2.97228 1 5.5 1C6.93721 1 8.33224 1.67394 9.23865 2.73834L10 3.6324L10.7614 2.73834C11.6678 1.67394 13.0628 1 14.5 1C17.0277 1 19 2.97228 19 5.5C19 7.06153 18.3068 8.55653 16.882 10.2996C15.4459 12.0566 13.3734 13.9409 10.7786 16.2989C10.7782 16.2993 10.7778 16.2996 10.7775 16.2999L10.0026 17L9.22318 16.2905Z" stroke="#FF4343" stroke-width="2"/>
+                            </svg>  
+                        </button>
+                                            <div class="d-flex flex-row">
+                                                <div class="w-75">
+                                                    <div class="title mb-2 fw-5">Ролл Жареный Цезарь</div>
+                                                    <div class="desc">
+                                                        <p>Состав: Курица, помидор, пекинская капуста, соус цезарь, соус унаги, кляр, сухари, рис, нори, кунжут.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end w-25">
+                                                    <ins class="text-decoration-none mb-2 fw-bold">1 370<span> ₽</span></ins>
+                                                    <del>1 519<span> ₽</span></del>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div class="weight fw-5">1500 г</div>
+                                                <div class="cart-btn-wrapper rounded-pill overflow-hidden">
+                                                    <div class="cart-btn rounded-pill p-0 overflow-hidden">
+                                                        <div class="quantity-block h-100 w-100 d-flex justify-content-between align-items-center">
+
+                                                            <button class="count-btn rounded-circle bg-white">
+                                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 2H0V0H14V2Z" fill="#333333"/>
+                                        </svg>  
+                                    </button>
+                                                            <label for="card-input" class="fs-0"></label>
+                                                            <input class="bg-transparent border-0 h-100 flex-grow-1" type="number" value="1" id="card-input">
+                                                            <button class="count-btn rounded-circle bg-white">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                                        </div>
+                                                        <button name="add-to-cart" onclick="$(this).prev('.quantity-block').css('margin-top', '0px');" class="cart-btn-inner w-100 h-100 border-0 rounded-pill ps-3 pe-0 p-0 d-flex align-items-center justify-content-between">
+                                    <span class="pe-2">В корзину</span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" stroke="#FF9100"/>
+                                        <path d="M27.2 27.2C27.2 28.199 26.399 29 25.4 29C24.9226 29 24.4648 28.8104 24.1272 28.4728C23.7896 28.1352 23.6 27.6774 23.6 27.2C23.6 26.201 24.401 25.4 25.4 25.4C25.8774 25.4 26.3352 25.5896 26.6728 25.9272C27.0104 26.2648 27.2 26.7226 27.2 27.2ZM16.4 25.4C15.401 25.4 14.6 26.201 14.6 27.2C14.6 27.6774 14.7896 28.1352 15.1272 28.4728C15.4648 28.8104 15.9226 29 16.4 29C17.399 29 18.2 28.199 18.2 27.2C18.2 26.201 17.399 25.4 16.4 25.4ZM16.58 22.367L16.553 22.475C16.553 22.601 16.652 22.7 16.778 22.7H27.2V24.5H16.4C15.9226 24.5 15.4648 24.3104 15.1272 23.9728C14.7896 23.6352 14.6 23.1774 14.6 22.7C14.6 22.385 14.681 22.088 14.816 21.836L16.04 19.631L12.8 12.8H11V11H13.943L14.789 12.8H28.1C28.595 12.8 29 13.205 29 13.7C29 13.853 28.955 14.006 28.892 14.15L25.67 19.973C25.364 20.522 24.77 20.9 24.095 20.9H17.39L16.58 22.367ZM17.75 19.1H19.1V17.3H16.904L17.75 19.1ZM20 17.3V19.1H22.7V17.3H20ZM22.7 16.4V14.6H20V16.4H22.7ZM25.499 17.3H23.6V19.1H24.5L25.499 17.3ZM27.002 14.6H23.6V16.4H26.003L27.002 14.6ZM15.626 14.6L16.472 16.4H19.1V14.6H15.626Z" fill="#FF9100"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="visually-hidden position-static stretched-link" data-bs-toggle="modal" data-bs-target="#ProductCardModal">
+                          </button>
+                                        </div>
+                                    </div>
+                                    <!-- card new -->
+                                    <div>
+                                        <div class="card h-100 pb-4 border-0">
+                                            <div class="img-wrapper position-relative overflow-hidden mb-3">
+                                                <img class="position-absolute top-0 start-0 w-100 h-100" src="img/images/product-4.jpg" alt="Сет «Америка»">
+                                            </div>
+                                            <div class="badge position-absolute">10%</div>
+                                            <button data-bs-toggle="button" class="wish bg-white rounded-circle position-absolute border-0 d-flex align-items-center justify-content-center p-0">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.22318 16.2905L9.22174 16.2892C6.62662 13.936 4.55384 12.0538 3.1178 10.2981C1.69324 8.55647 1 7.06152 1 5.5C1 2.97228 2.97228 1 5.5 1C6.93721 1 8.33224 1.67394 9.23865 2.73834L10 3.6324L10.7614 2.73834C11.6678 1.67394 13.0628 1 14.5 1C17.0277 1 19 2.97228 19 5.5C19 7.06153 18.3068 8.55653 16.882 10.2996C15.4459 12.0566 13.3734 13.9409 10.7786 16.2989C10.7782 16.2993 10.7778 16.2996 10.7775 16.2999L10.0026 17L9.22318 16.2905Z" stroke="#FF4343" stroke-width="2"/>
+                            </svg>  
+                        </button>
+                                            <div class="d-flex flex-row">
+                                                <div class="w-75">
+                                                    <div class="title mb-2 fw-5">Ролл Жареный с лососем</div>
+                                                    <div class="desc">
+                                                        <p>Состав: Лосось, сыр сливочный, огурец, кляр, соус унаги, кунжут, нори, рис.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end w-25">
+                                                    <ins class="text-decoration-none mb-2 fw-bold">1 370<span> ₽</span></ins>
+                                                    <del>1 519<span> ₽</span></del>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div class="weight fw-5">1500 г</div>
+                                                <div class="cart-btn-wrapper rounded-pill overflow-hidden">
+                                                    <div class="cart-btn rounded-pill p-0 overflow-hidden">
+                                                        <div class="quantity-block h-100 w-100 d-flex justify-content-between align-items-center">
+
+                                                            <button class="count-btn rounded-circle bg-white">
+                                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 2H0V0H14V2Z" fill="#333333"/>
+                                        </svg>  
+                                    </button>
+                                                            <label for="card-input" class="fs-0"></label>
+                                                            <input class="bg-transparent border-0 h-100 flex-grow-1" type="number" value="1" id="card-input">
+                                                            <button class="count-btn rounded-circle bg-white">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                                        </div>
+                                                        <button name="add-to-cart" onclick="$(this).prev('.quantity-block').css('margin-top', '0px');" class="cart-btn-inner w-100 h-100 border-0 rounded-pill ps-3 pe-0 p-0 d-flex align-items-center justify-content-between">
+                                    <span class="pe-2">В корзину</span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" stroke="#FF9100"/>
+                                        <path d="M27.2 27.2C27.2 28.199 26.399 29 25.4 29C24.9226 29 24.4648 28.8104 24.1272 28.4728C23.7896 28.1352 23.6 27.6774 23.6 27.2C23.6 26.201 24.401 25.4 25.4 25.4C25.8774 25.4 26.3352 25.5896 26.6728 25.9272C27.0104 26.2648 27.2 26.7226 27.2 27.2ZM16.4 25.4C15.401 25.4 14.6 26.201 14.6 27.2C14.6 27.6774 14.7896 28.1352 15.1272 28.4728C15.4648 28.8104 15.9226 29 16.4 29C17.399 29 18.2 28.199 18.2 27.2C18.2 26.201 17.399 25.4 16.4 25.4ZM16.58 22.367L16.553 22.475C16.553 22.601 16.652 22.7 16.778 22.7H27.2V24.5H16.4C15.9226 24.5 15.4648 24.3104 15.1272 23.9728C14.7896 23.6352 14.6 23.1774 14.6 22.7C14.6 22.385 14.681 22.088 14.816 21.836L16.04 19.631L12.8 12.8H11V11H13.943L14.789 12.8H28.1C28.595 12.8 29 13.205 29 13.7C29 13.853 28.955 14.006 28.892 14.15L25.67 19.973C25.364 20.522 24.77 20.9 24.095 20.9H17.39L16.58 22.367ZM17.75 19.1H19.1V17.3H16.904L17.75 19.1ZM20 17.3V19.1H22.7V17.3H20ZM22.7 16.4V14.6H20V16.4H22.7ZM25.499 17.3H23.6V19.1H24.5L25.499 17.3ZM27.002 14.6H23.6V16.4H26.003L27.002 14.6ZM15.626 14.6L16.472 16.4H19.1V14.6H15.626Z" fill="#FF9100"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="visually-hidden position-static stretched-link" data-bs-toggle="modal" data-bs-target="#ProductCardModal">
+                          </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <!-- delivery addresses list end -->
                 </div>
             </div>
         </section>

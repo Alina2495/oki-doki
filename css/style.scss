@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+// fonts Montserrat, Roboto
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+//*** Variables ***//
 $white: #fff;
 $gray: #8D8D8D;
 $gray2: #CED4DA;
@@ -11,7 +12,6 @@ $orange: #FF9100;
 $green: #37C8AB;
 $pink: #FF4343;
 $transparent: transparent;
-$currentColor: currentColor;
 html,
 body {
     height: 100%;
@@ -45,7 +45,6 @@ h2 {
 }
 
 h6 {
-    font-weight: 600;
     font-size: 20px;
 }
 
@@ -153,7 +152,7 @@ a.hover-cart {
             top: 0;
             left: 0;
             mix-blend-mode: normal;
-            background-image: linear-gradient(180deg, #000000 37.6%, rgba(0, 0, 0, 0) 82.44%);
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 80%);
         }
     }
     &-indicators {
@@ -169,10 +168,6 @@ a.hover-cart {
             background-color: $orange;
         }
     }
-}
-
-.banner-section {
-    overflow-x: hidden;
 }
 
 .dishes-section {
@@ -275,7 +270,6 @@ a.hover-cart {
 .btn-group {
     z-index: 1;
     font-size: 0;
-    // display: none !important;
     .btn-check:checked+.btn {
         color: $black3;
         background-color: $white;
@@ -363,7 +357,7 @@ input::-webkit-inner-spin-button {
             object-fit: contain;
             object-position: right top;
             top: -50px;
-            height: 78%;
+            height: 77%;
             width: auto;
         }
     }
@@ -429,28 +423,8 @@ input::-webkit-inner-spin-button {
     }
 }
 
-button {
-    border: none;
-}
-
 .contacts-section {
     font-size: 16px;
-}
-
-footer {
-    margin-top: auto;
-    color: $white;
-    font-size: 16px;
-    background-color: $black2;
-    a {
-        color: inherit;
-        &:hover {
-            opacity: 0.9;
-        }
-    }
-    address {
-        font-size: 14px;
-    }
 }
 
 .swiper-button {
@@ -522,42 +496,6 @@ footer {
     }
 }
 
-.card-page {
-    font-size: 18px;
-    .img-wrapper {
-        min-height: 200px;
-        padding-top: 80%;
-        img {
-            object-fit: contain;
-        }
-    }
-    .badge {
-        font-size: 18px;
-    }
-    .desc {
-        color: $gray;
-    }
-    ins {
-        font-size: 24px;
-    }
-    del {
-        color: $gray;
-    }
-    .cart-btn {
-        width: 200px;
-        height: 55px;
-        font-size: 18px;
-    }
-    .quantity-block {
-        margin-top: -55px;
-    }
-    button,
-    .cart-btn-inner svg {
-        height: 54px;
-        width: 54px;
-    }
-}
-
 dl,
 dt,
 dd {
@@ -575,30 +513,6 @@ dl {
 
 dd {
     margin: 0;
-}
-
-.cart-page {
-    .cart-list {
-        font-size: 18px;
-        .img-wrapper {
-            height: 140px;
-            width: 140px;
-        }
-        .badge {
-            top: 0;
-            left: 0;
-        }
-        .cart-item-amount {
-            background-color: #F6F7F8;
-            width: 125px;
-            height: 45px;
-        }
-        .delete-cart-item {
-            width: 23px;
-            height: 23px;
-            background-color: transparentize($pink, 0.9);
-        }
-    }
 }
 
 .img-wrapper {
@@ -766,150 +680,12 @@ a {
     }
 }
 
-// @media (min-width: 1400px) and (max-width: 1463px) {
-// }
-// @media (max-width: 1399.98px) {
-// }
-@media (max-width: 1199.98px) {
-    .carousel-item {
-        min-height: 450px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .carousel-item {
-        min-height: 400px;
-    }
-    h1,
-    h2 {
-        font-size: 32px;
-    }
-    .dishes-section .nav-tabs {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-    .contacts-section {
-        .map {
-            height: 330px;
-        }
-    }
-    .cart-page {
-        .cart-list {
-            .col-lg-1 {
-                width: auto;
-                position: absolute;
-                right: 0;
-                top: 6px;
-            }
-        }
-    }
-}
-
-@media (max-width: 767.98px) {
-    .carousel-item {
-        min-height: 350px;
-    }
-    .header-icon {
-        width: 30px;
-        height: 30px;
-    }
-    h1,
-    h2 {
-        font-size: 28px;
-    }
-    .card {
-        -webkit-filter: drop-shadow(0px 0px 15px #E1E1E3);
-        filter: drop-shadow(0px 0px 15px #E1E1E3);
-        -webkit-transition: none;
-        -moz-transition: none;
-        -ms-transition: none;
-        -o-transition: none;
-        transition: none;
-        &:hover {
-            top: 0px;
-            -webkit-filter: drop-shadow(0px 0px 15px #E1E1E3);
-            filter: drop-shadow(0px 0px 15px #E1E1E3);
-        }
-    }
-}
-
-@media (max-width: 575.98px) {
-    .carousel-item {
-        min-height: 300px;
-    }
-    .tab-pane {
-        .row {
-            padding-bottom: 30px;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-            overflow-x: scroll;
-            -webkit-overflow-scrolling: touch;
-            >div {
-                max-width: 290px;
-            }
-        }
-    }
-    .contacts-section {
-        .map {
-            height: 230px;
-        }
-    }
-    .modal .btn {
-        flex-basis: 100%;
-    }
-    .comments-section,
-    .promotions-section {
-        .swiper-wrapper {
-            padding-top: 30px;
-        }
-        .swiper-button {
-            &-prev {
-                left: unset;
-                right: 46px;
-                top: 60px;
-            }
-            &-next {
-                left: unset;
-                right: 0;
-                top: 60px;
-            }
-        }
-    }
-}
-
-@media (min-width: 767.98px) {
-    .product-modal {
-        max-width: 800px;
-    }
-}
-
-@media (min-width: 991.98px) {
-    .comment-modal {
-        max-width: 600px;
-    }
-}
-
-@media (min-width: 1464px) {
-    .container,
-    .container-xl {
-        max-width: 1460px;
-    }
-}
-
 .bi::before {
     color: $orange;
 }
 
 .bi-arrow-right::before {
     color: inherit;
-}
-
-button {
-    background-color: $transparent;
-    border: none;
 }
 
 .desktop-scroll-header {
@@ -966,58 +742,33 @@ button {
     z-index: 10;
 }
 
+// header search form
 .search-form {
-    background: #FFFFFF;
     border: 1px solid #CACACA;
     box-sizing: border-box;
-    border-radius: 40px;
     width: fit-content;
-}
-
-.search-form .search-input::placeholder {
-    color: #8D8D8D;
-}
-
-.search-input:required {
-    border-color: transparent;
-    outline: none;
-}
-
-.search-form .search-input {
-    font-size: 0.889em;
-    border-radius: 40px !important;
-    border: none !important;
-    padding: 0.563em 0 0.563em 30px;
-    flex-grow: 1;
-    margin-bottom: 0 !important;
-    -webkit-border-radius: 40px !important;
-    -moz-border-radius: 40px !important;
-    -ms-border-radius: 40px !important;
-    -o-border-radius: 40px !important;
-}
-
-.search-form .search-input:focus {
-    border-radius: 40px;
-    outline: 0;
-}
-
-.search-form .search-btn {
-    background-color: white;
-    font-size: 0.889em;
-    color: $orange;
-    border: 1px solid $orange;
-    font-family: inherit;
-    font-weight: 400;
-    padding: 0.563em 1.875em;
-    margin-right: -1px;
-    border-radius: 40px;
-}
-
-.search-form .search-btn:hover,
-.search-form .search-btn:focus,
-.search-form .search-btn:active {
-    background-color: $orange;
-    color: white;
+    .search-input {
+        padding: 0.563em 0 0.563em 30px;
+        outline: none;
+        &::placeholder {
+            color: #8D8D8D;
+        }
+    }
+    .search-btn {
+        background-color: white;
+        color: $orange;
+        border: 1px solid $orange;
+        font-family: inherit;
+        font-weight: 400;
+        padding: 0.563em 1.875em;
+        margin-right: -1px;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $orange;
+            color: white;
+        }
+    }
 }
 
 
@@ -1195,80 +946,54 @@ button {
     color: #808080;
 }
 
-
-/* select customization */
-
-.address-select {
-    width: 100%;
-    border-radius: 5px;
-    position: relative;
-    cursor: pointer;
-}
-
-.select_btn {
-    margin-bottom: 0px;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #CACACA;
-    border-radius: 5px;
-    padding: 0.6em 1.25em;
-}
-
-.options {
+.order_details {
     display: none;
-    border: 1px solid #CACACA;
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    width: 100%;
-    background-color: #fff;
-    z-index: 10;
-    border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    -ms-border-radius: 0 0 5px 5px;
-    -o-border-radius: 0 0 5px 5px;
-    margin-top: -1px;
 }
 
-
-/* radio button customization */
-
-.radio label {
-    margin-bottom: 0px;
-    width: 100%;
+.order_details.od_show {
+    display: table-row;
 }
 
-input[type="radio"]+span {
-    -webkit-appearance: none;
-    width: 100%;
-    background: transparent;
-    outline: none;
-    margin: 0px;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 0.7em 0.5em 0.7em 1.25em;
-    font-size: 16px;
-    cursor: pointer;
+.orders_table thead tr th {
+    color: #808080;
+    font-weight: 400;
+    white-space: nowrap;
+    padding: 1em;
+    border-top: none;
+    border-bottom: none;
 }
 
-.variant span {
-    font-weight: 600;
-    display: block;
-    margin-bottom: 0.5em;
+.orders_table tbody tr td {
+    padding: .75em 1em;
 }
 
-input[type="radio"]+span:hover,
-input[type="radio"]:checked+span {
-    background-color: #F4BD7F;
-    font-weight: 600;
+.dropdown-toggle::after {
+    display: none;
+}
+
+tbody.accordion {
+    min-height: 200px;
 }
 
 
 /* PROFILE PAGE END */
+
+//*** Footer ***//
+footer {
+    margin-top: auto;
+    color: $white;
+    font-size: 16px;
+    background-color: $black2;
+    a {
+        color: inherit;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+    address {
+        font-size: 14px;
+    }
+}
 
 //*** MODAL WINDOW STYLES ***//
 .modal {
@@ -1329,5 +1054,134 @@ button {
         &:hover {
             background-color: $transparent;
         }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .carousel-item {
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .carousel-item {
+        min-height: 400px;
+    }
+    h1,
+    h2 {
+        font-size: 32px;
+    }
+    .dishes-section .nav-tabs {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .contacts-section {
+        .map {
+            height: 330px;
+        }
+    }
+    .cart-page {
+        .cart-list {
+            .col-lg-1 {
+                width: auto;
+                position: absolute;
+                right: 0;
+                top: 6px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .carousel-item {
+        min-height: 350px;
+    }
+    .header-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .h-scroll {
+        .row {
+            padding-bottom: 30px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            >div {
+                max-width: 290px;
+            }
+        }
+    }
+    h1,
+    h2 {
+        font-size: 28px;
+    }
+    .card {
+        -webkit-filter: drop-shadow(0px 0px 15px #E1E1E3);
+        filter: drop-shadow(0px 0px 15px #E1E1E3);
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+        &:hover {
+            top: 0px;
+            -webkit-filter: drop-shadow(0px 0px 15px #E1E1E3);
+            filter: drop-shadow(0px 0px 15px #E1E1E3);
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel-item {
+        min-height: 300px;
+    }
+    .contacts-section {
+        .map {
+            height: 230px;
+        }
+    }
+    .modal .btn {
+        flex-basis: 100%;
+    }
+    .comments-section,
+    .promotions-section {
+        .swiper-wrapper {
+            padding-top: 30px;
+        }
+        .swiper-button {
+            &-prev {
+                left: unset;
+                right: 46px;
+                top: 60px;
+            }
+            &-next {
+                left: unset;
+                right: 0;
+                top: 60px;
+            }
+        }
+    }
+}
+
+@media (min-width: 767.98px) {
+    .product-modal {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .comment-modal {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1464px) {
+    .container,
+    .container-xl {
+        max-width: 1460px;
     }
 }
