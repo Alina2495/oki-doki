@@ -1,3 +1,52 @@
+var swiper = new Swiper('.promotions-swiper', {
+    slidesPerView: 1,
+    speed: 300,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 1
+        },
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
+});
+
+var swiper = new Swiper('.swiper-comments', {
+    slidesPerView: 1,
+    speed: 300,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    },
+});
+
+
+
 // show desktop menu while hover to menu link 
 $(function() {
     $(".menu-hover-link").mouseenter(function() {
@@ -65,55 +114,4 @@ $(function() {
         $(".order_details").removeClass("od_show");
         $(this).next(".order_details").addClass("od_show");
     });
-});
-
-var swiper = new Swiper('.promotions-swiper', {
-    slidesPerView: 1,
-    speed: 300,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        576: {
-            slidesPerView: 1
-        },
-        700: {
-            slidesPerView: 2,
-            spaceBetween: 15
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        }
-    }
-});
-
-var swiper = new Swiper('.swiper-comments', {
-    slidesPerView: 1,
-    speed: 300,
-    spaceBetween: 30,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        },
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        }
-    },
 });

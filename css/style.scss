@@ -205,6 +205,9 @@ a.hover-cart {
             color: $orange;
         }
     }
+    .card img {
+        object-fit: contain;
+    }
 }
 
 .badge {

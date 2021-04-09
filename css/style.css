@@ -223,6 +223,11 @@ a.hover-cart:hover {
   color: #FF9100;
 }
 
+.dishes-section .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .badge {
   font-weight: 500;
   background-color: #37C8AB;
