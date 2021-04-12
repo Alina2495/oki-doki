@@ -137,10 +137,10 @@ a.hover-cart:hover {
 }
 
 .carousel-item .container * {
-  z-index: 20;
+  z-index: 10;
 }
 
-.carousel-item img {
+.carousel-item .banner-bg {
   z-index: 0;
   position: absolute;
   height: 100%;
@@ -153,16 +153,8 @@ a.hover-cart:hover {
      object-fit: cover;
 }
 
-.carousel-item .c-gradient {
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  mix-blend-mode: normal;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(80%, transparent));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 80%);
+.carousel-item:nth-child(2) {
+  color: #fff;
 }
 
 .carousel-indicators {
